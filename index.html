@@ -1,0 +1,1518 @@
+<!doctype html><html lang="cs"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Výměry"><meta name="theme-color" content="#10283e"><meta name="format-detection" content="telephone=no"><link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAChklEQVR4nO3dsXHUUBRAUZahADumATNDDaYqpwSkbocGqIIKiGmBgBkibmC878nC5zQg7Zu7X9KOrX+5ubt/A3/z9ugT4OUSB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEF6t3y8n9+/LR/xP3P74dPasS5rr2CQxRXtJLJ0WVHGde3McyMOZUxYmOp4HMqYMz3b2TiUMW10wh5lSYNxWDZ2zM15+3eO3zYf1p+vpr/8Kfa/bAdcVs5VxsuxPzf3HCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBOmAzHjs4nYWVgyQOkjhIx2wAeF6vaoM6KwdJHCRxkA6453hVl+1Ts3KQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQ/MfbE7x//HLsCXz8uvqCAisHSRwkcZDEQRIHSRwkcZD8zvEEPx4+H3sC9SLG24eRw1k5SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDtIBcdg69N/sz+2YvwTTxykMrhw23dkxN2f3HKTZOCwe00YnPL5y6GPO9Gw3Liv6mLAw1aV7Dn1c1848Lzd39wuH+cND7DNtfs224+BEPMqSxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcpF99ZEP7V34DIwAAAABJRU5ErkJggg=="><link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAChklEQVR4nO3dsXHUUBRAUZahADumATNDDaYqpwSkbocGqIIKiGmBgBkibmC878nC5zQg7Zu7X9KOrX+5ubt/A3/z9ugT4OUSB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEF6t3y8n9+/LR/xP3P74dPasS5rr2CQxRXtJLJ0WVHGde3McyMOZUxYmOp4HMqYMz3b2TiUMW10wh5lSYNxWDZ2zM15+3eO3zYf1p+vpr/8Kfa/bAdcVs5VxsuxPzf3HCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBEgdJHCRxkMRBOmAzHjs4nYWVgyQOkjhIx2wAeF6vaoM6KwdJHCRxkA6453hVl+1Ts3KQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQ/MfbE7x//HLsCXz8uvqCAisHSRwkcZDEQRIHSRwkcZD8zvEEPx4+H3sC9SLG24eRw1k5SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDpI4SOIgiYMkDtIBcdg69N/sz+2YvwTTxykMrhw23dkxN2f3HKTZOCwe00YnPL5y6GPO9Gw3Liv6mLAw1aV7Dn1c1848Lzd39wuH+cND7DNtfs224+BEPMqSxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcpF99ZEP7V34DIwAAAABJRU5ErkJggg=="><title>Výměry podlah</title><style>body{font:15px system-ui;margin:0;background:#eef2f5;color:#183042}header{padding:18px;background:#fff;border-bottom:1px solid #ccd}main{padding:16px;max-width:1250px;margin:auto}button,input,select{font:inherit;padding:9px;border:1px solid #bac6d0;border-radius:7px}button{background:#183f58;color:white;cursor:pointer}label{display:inline-flex;gap:8px;align-items:center;margin:5px 12px 5px 0}.toolbar{background:white;padding:12px;border-radius:10px;margin-bottom:12px}.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}.floorbar{position:fixed;right:0;top:0;bottom:0;width:68px;display:flex;flex-direction:column;align-items:center;gap:8px;overflow-y:auto;overflow-x:hidden;padding:16px 7px;box-sizing:border-box;background:#fff;border-left:1px solid #cbd8e1;z-index:20;box-shadow:-2px 0 10px #183f5810}.floorbar button{flex-shrink:0;width:46px;min-height:46px;padding:7px 2px;text-align:center}.floorbar .floor-add{background:#1179d2;border-color:#1179d2;font-size:25px;font-weight:bold;line-height:1}.floorbar .floor-tab{background:#e4ebf0;color:#1b4058;border:1px solid #bdcbd6;font-weight:700}.floorbar .floor-tab.selected{background:#137b91;color:white}.floorbar .floor-help{font-size:10px;color:#667b8a;text-align:center;line-height:1.3}.floorbar .floor-divider{height:1px;width:42px;background:#d5e1e9;margin:4px 0}main{margin-right:68px}header{margin-right:68px}@media(max-width:600px){.floorbar{width:54px;padding:10px 4px;gap:6px}.floorbar button{width:43px;min-height:43px}main,header{margin-right:54px}main{padding:8px}.toolbar{padding:8px}}.tabs button.active{background:#137b91}.frame{background:white;border:1px solid #ccd;overflow:auto;max-height:72vh}canvas{display:block;max-width:none;cursor:crosshair}body:has(#roomsTab.active) canvas{cursor:pointer}dialog{border:0;border-radius:14px;box-shadow:0 16px 65px #0005;padding:24px;width:min(440px,calc(100vw - 48px));color:#183042}dialog::backdrop{background:#10253699}.modal-fields{display:grid;gap:12px}.modal-fields label{display:grid;gap:5px;margin:0}.modal-fields input,.modal-fields textarea{box-sizing:border-box;width:100%;font:inherit;padding:10px;border:1px solid #aabac6;border-radius:7px}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}.secondary{background:#e6eef2;color:#183042}.note{background:#fff;padding:12px;border-radius:8px;margin-top:10px}#status{font-weight:600} .final-panel{background:#fff;padding:18px;border-radius:10px;margin:10px 0}.final-table{width:100%;border-collapse:collapse;min-width:760px}.final-table th,.final-table td{border-bottom:1px solid #dbe4eb;padding:10px 7px;text-align:left}.final-table input{box-sizing:border-box;width:110px;max-width:100%;background:#fff}.final-table th{font-size:13px;color:#496071}.final-scroll{overflow-x:auto}.final-totals{margin-top:20px;display:grid;gap:9px;max-width:430px;margin-left:auto}.final-totals div{display:flex;justify-content:space-between;gap:16px}.final-totals .grand{font-size:20px;border-top:2px solid #183f58;padding-top:12px;font-weight:750}.final-hint{color:#546b78;font-size:13px}.final-export{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px} 
+/* Tabletová pracovní plocha: bez svislého rolování v půdorysech. */
+html,body{height:100%;overscroll-behavior:none}
+body:not(.final-mode){height:100dvh;overflow:hidden;display:flex;flex-direction:column}
+header{flex:0 0 auto;padding:9px 14px;font-size:13px}
+main{max-width:none;width:auto;box-sizing:border-box;flex:1;min-height:0;display:flex;flex-direction:column;padding:8px 10px 6px;gap:5px}
+.toolbar{flex:0 0 auto;margin:0;padding:0;border:1px solid #d5e1e9;box-shadow:0 1px 3px #183f580c}
+.toolbar summary{padding:8px 12px;cursor:pointer;font-weight:650;user-select:none;list-style:none}
+.toolbar summary::-webkit-details-marker{display:none}
+.toolbar summary:before{content:'▸';margin-right:8px;color:#137b91}
+.toolbar[open] summary:before{content:'▾'}
+.toolbar-inner{display:flex;flex-wrap:wrap;align-items:center;gap:3px 7px;padding:7px 10px 10px;border-top:1px solid #e2eaf0;max-height:28dvh;overflow-y:auto}
+.toolbar-inner label{margin:2px 5px 2px 0}
+.toolbar-inner input,.toolbar-inner select,.toolbar-inner button{padding:6px}
+.tools-hint{font-weight:400;color:#647989;font-size:12px;margin-left:8px}
+.tabs{flex:0 0 auto;gap:5px;flex-wrap:nowrap;overflow-x:auto;margin:0;padding:0 0 3px}
+.tabs button{white-space:nowrap;padding:8px 12px}
+.tabs .tab-group-start{margin-left:18px}
+
+.frame{flex:1;min-height:0;max-height:none;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:8px}
+.frame canvas{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;flex-shrink:1;touch-action:manipulation}
+#openingsHelp{display:none!important}
+#status{flex:0 0 auto;margin:0;padding:5px 9px;font-size:12px;line-height:1.2;max-height:34px;overflow:hidden}
+main>.note:last-child{display:none}
+#roomList,#skirtingList{flex:0 0 auto;max-height:17dvh;overflow-y:auto;margin:0!important;padding:6px 10px!important}
+body.final-mode{overflow:auto;height:auto;display:block}
+body.final-mode main{display:block;min-height:0}
+body.final-mode .frame{display:none}
+body.final-mode #status{display:none}
+body.final-mode .toolbar{display:none}
+body.final-mode .tabs{margin-bottom:8px}
+@media(max-width:700px){header{padding:6px 9px}main{padding:5px;gap:4px}.tools-hint{display:none}.tabs button{padding:7px 9px;font-size:13px}.floorbar{width:54px}.toolbar-inner{max-height:36dvh}}
+@media(orientation:landscape) and (max-height:650px){header{padding:4px 10px}.toolbar summary{padding:5px 9px}.tabs button{padding:5px 10px}#status{padding:3px 8px}.toolbar-inner{max-height:38dvh}}
+
+/* Dvě pracovní vrstvy nad společným půdorysem každého patra. */
+.floorbar{width:102px;padding:12px 6px;gap:7px}
+.floorbar .view-tab{width:90px;min-height:43px;padding:7px 3px;font-size:12px;font-weight:700;background:#e5edf3;color:#23435a;border:1px solid #c4d5df}
+.floorbar .view-tab.selected{background:#137b91;color:#fff;border-color:#137b91}
+.floorbar .floor-tab,.floorbar .floor-add{width:46px}
+.floorbar .floor-divider{margin:7px 0}
+.floorbar .view-divider{width:82px;height:1px;background:#cbd8e1;margin:6px 0}
+.floorbar .floor-section{font-size:11px;font-weight:700;color:#607789}
+main,header{margin-right:102px}
+body.work-view .tabs button:not(#orig):not(#compare):not(.work-step){display:none}
+body:not(.work-view) .tabs .work-step{display:none}
+.floorbar .summary-tab{width:90px;min-height:43px;background:#183f58;color:white;font-weight:700;border:1px solid #183f58}
+.floorbar .summary-tab.selected{background:#137b91;border-color:#137b91}
+#workList{background:white;border-radius:10px;padding:12px;overflow:auto;max-height:34dvh}
+.work-row{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:8px 0;border-bottom:1px solid #ddd;padding-bottom:8px}
+.work-row input{min-width:0;width:105px;padding:7px}.work-row input:first-child{width:190px}
+body.final-mode #workList{display:none!important}
+@media(max-width:600px){.floorbar .summary-tab{width:70px;font-size:11px}}
+@media(max-width:600px){.floorbar{width:78px;padding:8px 3px}.floorbar .view-tab{width:70px;min-height:40px;font-size:11px}main,header{margin-right:78px}}
+
+/* 7.7: maximalni pracovni plocha, centrovani a zoom. */
+body.plan-only #roomList,body.plan-only #skirtingList,body.plan-only #workList{display:none!important}
+body.plan-only .frame{flex:1;min-height:0;margin:0;position:relative;overflow:hidden;display:flex!important;align-items:center;justify-content:center}
+.frame canvas{touch-action:none;transform-origin:center center;max-width:none;max-height:none;object-fit:fill;flex:none}
+body.plan-only .toolbar:not([open]){margin:0}
+.zoom-controls{position:absolute;left:12px;bottom:12px;display:flex;gap:5px;z-index:3;background:#ffffffdf;border-radius:9px;padding:5px;box-shadow:0 2px 10px #0002}
+.zoom-controls button{min-width:36px;min-height:36px;padding:5px;font-size:17px}
+.zoom-controls .zoom-fit{font-size:12px}
+body.final-mode .zoom-controls{display:none}
+
+/* 7.8: pevna sirka pracoviste; canvas nikdy neurcuje sirku rodice. */
+body:not(.final-mode) main{margin-left:0!important;margin-right:102px!important;width:calc(100% - 102px)!important;max-width:none!important;min-width:0!important;align-self:stretch!important}
+body:not(.final-mode) .frame{display:flex!important;width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important;flex:1 1 0!important;align-items:center!important;justify-content:center!important;overflow:hidden!important}
+body:not(.final-mode) .tabs{width:100%;min-width:0;box-sizing:border-box}
+body:not(.final-mode) .frame canvas{display:block!important;min-width:0!important;max-width:none!important;flex:0 0 auto!important;position:relative}
+@media(max-width:600px){body:not(.final-mode) main{margin-right:78px!important;width:calc(100% - 78px)!important}}
+
+/* 8.2: viditelny vypocet mistnosti, dokud nejsou spocitane. */
+.quick-calc{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:6;background:#087e9b;color:white;border:2px solid white;box-shadow:0 2px 12px #0004;border-radius:9px;padding:12px 18px;font-weight:700;font-size:15px;white-space:nowrap;max-width:calc(100% - 18px)}
+.quick-calc:hover{background:#09667e}
+body.final-mode .quick-calc{display:none!important}
+/* 7.9: layout: sidebar zabira misto jen jednou; hlavni plocha vyplni cely zbytek. */
+html,body{width:100%;box-sizing:border-box}
+body:not(.final-mode){padding-right:102px!important;align-items:stretch!important}
+body:not(.final-mode) header{width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:0!important;flex-shrink:0}
+body:not(.final-mode) main{width:100%!important;max-width:none!important;min-width:0!important;margin:0!important;box-sizing:border-box!important;align-self:stretch!important;flex:1 1 auto!important}
+body:not(.final-mode) .frame{width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;align-self:stretch!important}
+body:not(.final-mode) .tabs,body:not(.final-mode) .toolbar{max-width:100%!important;min-width:0!important}
+@media(max-width:600px){body:not(.final-mode){padding-right:78px!important}}
+
+.calc-top{display:block;align-self:center;margin:4px auto 6px;padding:8px 18px;background:#087e9b;color:white;border:0;border-radius:8px;font-weight:700;cursor:pointer;flex-shrink:0;max-width:calc(100% - 24px)}
+.calc-top:hover{background:#09667e}
+body.final-mode .calc-top{display:none!important}
+
+/* 8.4: mark required inputs instead of adding a duplicate calculation bar */
+.required-missing{border:3px solid #d52332!important;background:#fff0f1!important;outline:3px solid #ffb7bd!important;outline-offset:2px;box-shadow:0 0 0 2px #d5233240!important}
+
+#measureWall{font-weight:750;border:2px solid transparent;transition:background .15s;white-space:nowrap}
+#measureWall.measure-red{background:#b4232e;color:white;border-color:#8f1620}
+#measureWall.measure-orange{background:#f39c28;color:#30210b;border-color:#c8740d}
+#measureWall.measure-green{background:#188451;color:white;border-color:#11643b}
+#measureWall:focus-visible{outline:3px solid #267fe8;outline-offset:2px}
+
+/* 8.9: counts of manually marked openings, shown only in Original tab */
+.frame{position:relative}
+.opening-counter{position:absolute;top:12px;left:12px;z-index:8;display:flex;gap:10px;flex-wrap:wrap;pointer-events:none}
+.opening-counter span{display:inline-flex;gap:4px;align-items:center;background:rgba(255,255,255,.94);border:1px solid #cbd5e1;border-radius:9px;padding:8px 11px;font-size:15px;font-weight:650;box-shadow:0 2px 9px #0002;color:#142638}
+@media(max-width:600px){.opening-counter{top:6px;left:6px;gap:5px}.opening-counter span{padding:5px 7px;font-size:12px}}
+.final-section-row td{border-top:5px solid #183f58!important;background:#dceaf1;font-size:17px;font-weight:800;letter-spacing:.06em;padding:15px 9px!important}.screed-settings{padding:12px 16px;margin:15px 0;border:1px solid #a8c7d6;border-radius:9px;background:#f1f7fa}.screed-settings h3{margin:0 0 12px}.final-totals .subtotal{border-top:2px solid #183f58;padding-top:10px;font-weight:700}.final-totals .combined{border-top:4px solid #183f58;padding-top:12px;margin-top:10px;font-weight:700}
+/* 9.4 | Profesionální vizuální vrstva – bez změn výpočtové logiky */
+:root{--navy:#10283e;--navy2:#193a52;--teal:#087d87;--teal-dark:#06646e;--ink:#172f40;--muted:#617586;--border:#dbe4eb;--surface:#fff;--page:#f3f6f9;--radius:12px}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--page);color:var(--ink);font-size:14px}
+header{background:linear-gradient(110deg,#10283e 0%,#1c445b 100%);color:#f8fbfd;border-bottom:1px solid #0c2637;box-shadow:0 2px 12px #0d26371a;letter-spacing:.01em;font-size:13px;padding:12px 18px}
+header b{font-size:16px;font-weight:760;letter-spacing:-.025em}
+main{gap:8px;padding:11px 14px 10px}
+button,input,select,textarea{font-family:inherit}
+button{background:var(--navy2);color:#fff;border:1px solid transparent;border-radius:9px;font-weight:650;transition:background-color .15s,border-color .15s,box-shadow .15s}
+button:hover{background:#28526c}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #52b8cb;outline-offset:2px}
+button:disabled{opacity:.55;cursor:not-allowed}
+input,select,textarea{background:#fff;color:var(--ink);border:1px solid #bccbd7;border-radius:8px}
+input:focus,select:focus,textarea:focus{border-color:var(--teal)}
+.toolbar{border:1px solid var(--border);border-radius:11px;background:var(--surface);box-shadow:0 2px 10px #1b3b5210;overflow:hidden}
+.toolbar summary{padding:11px 14px;color:#203d50;font-size:13px;font-weight:730}
+.toolbar summary:hover{background:#f5f9fa}
+.toolbar summary:before{color:var(--teal);font-size:15px}
+.toolbar-inner{background:#fcfdfe;border-top:1px solid var(--border);gap:7px 10px;padding:12px}
+.toolbar-inner button{padding:8px 11px}
+.toolbar-inner label{color:#435b6b;font-size:12px;font-weight:650}
+.tools-hint{color:#758a99;font-weight:450}
+.tabs{gap:5px;scrollbar-width:thin;scrollbar-color:#b6c9d4 transparent;padding:2px 1px 7px}
+.tabs button{border:1px solid transparent;background:transparent;color:#526c7e;font-size:13px;font-weight:690;border-radius:8px;padding:9px 12px;box-shadow:none}
+.tabs button:hover{background:#e5edf2;color:#193e53}
+.tabs button.active{background:#087d87;color:#fff;border-color:#087d87;box-shadow:0 2px 6px #087d872c}
+.tabs .tab-group-start{margin-left:19px;position:relative}
+.tabs .tab-group-start:before{content:"";position:absolute;left:-11px;top:5px;height:21px;border-left:1px solid #c5d5df}
+.frame{border:1px solid #d8e3eb;background:#fff;border-radius:13px;box-shadow:0 4px 20px #1634490b;overflow:hidden}
+.floorbar{background:#fff;border-left:1px solid #d9e5ed;box-shadow:-5px 0 20px #183f580d;padding-top:14px}
+.floorbar .view-tab{background:#f1f5f8;color:#314f62;border:1px solid #dbe5eb;border-radius:9px;font-size:12px;font-weight:750;box-shadow:none}
+.floorbar .view-tab:hover,.floorbar .floor-tab:hover{background:#e0edf1;color:#17445b}
+.floorbar .view-tab.selected{background:#087d87;color:#fff;border-color:#087d87;box-shadow:0 2px 8px #087d8730}
+.floorbar .summary-tab{background:#193a52;color:#fff;border-radius:9px;border-color:#193a52}
+.floorbar .summary-tab.selected{background:#087d87;border-color:#087d87}
+.floorbar .floor-section{color:#8396a4;font-size:10px;letter-spacing:.12em}
+.floorbar .floor-tab{background:#f1f5f8;color:#385569;border-color:#dbe5eb;border-radius:10px}
+.floorbar .floor-tab.selected{background:#087d87;color:white;border-color:#087d87}
+.floorbar .floor-add{background:#1976c9;border-color:#1976c9;border-radius:10px;box-shadow:0 2px 8px #1976c92b}
+.floorbar .floor-add:hover{background:#105d9f}
+.floorbar .floor-divider,.floorbar .view-divider{background:#e0e9ee}
+.zoom-controls{border:1px solid #e0e7eb;background:#fffffff2;border-radius:12px;box-shadow:0 5px 18px #122d4120;padding:5px}
+.zoom-controls button{background:#edf4f7;color:#224a5f;border:1px solid #dce8ed;border-radius:8px}
+.zoom-controls button:hover{background:#d8eaf0}
+.opening-counter span{border:1px solid #dce6ed;border-radius:10px;background:#fffffff5;box-shadow:0 2px 10px #17344814;color:#213e51}
+#status,.note{background:#fff;border:1px solid var(--border);color:#405a6b;border-radius:9px}
+dialog{border:1px solid #dce7ee;border-radius:17px;box-shadow:0 24px 80px #081e3266;padding:25px;color:var(--ink);max-height:min(85dvh,820px);overflow-y:auto}
+dialog h2{font-size:19px;letter-spacing:-.025em;color:#14364b;margin:0 0 19px}
+dialog::backdrop{background:#071d31a8;backdrop-filter:blur(3px)}
+.modal-fields{gap:14px}
+.modal-fields label{color:#476071;font-size:13px;font-weight:660}
+.modal-fields input,.modal-fields textarea{background:#fbfdfe;border:1px solid #c7d5df;border-radius:9px;padding:11px;color:#173346;font-weight:450}
+.modal-actions{border-top:1px solid #e6edf1;padding-top:15px;margin-top:19px}
+.secondary{background:#edf3f6;color:#294b5f;border:1px solid #d9e4ea}
+.secondary:hover{background:#dce9ee}
+.final-panel{background:#fff;border:1px solid #dce6ec;border-radius:15px;box-shadow:0 4px 20px #1b3b520b;padding:22px}
+.final-table{font-size:13px}
+.final-table th{background:#f1f6f8;color:#4b6374;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:12px 9px}
+.final-table td{border-bottom:1px solid #e6edf1;padding:11px 9px}
+.final-table tbody tr:hover{background:#f8fbfc}
+.final-table input{border-radius:7px;padding:8px;border:1px solid #c9d7df}
+.final-section-row td{background:#e7f1f3!important;color:#163b4a;border-top:4px solid #087d87!important;font-size:15px;letter-spacing:.055em;padding:14px 11px!important}
+.screed-settings{background:#f2f8f9;border:1px solid #c7e1e4;border-radius:12px;padding:16px}
+.final-totals{background:#f8fbfc;border:1px solid #e1eaef;border-radius:12px;padding:16px;max-width:480px}
+.final-totals .subtotal{border-top:2px solid #bfd5de}
+.final-totals .grand,.final-totals .combined{border-top:3px solid #087d87;color:#0d5660}
+.final-export button{background:#193a52}
+.required-missing{border-color:#c52b3c!important;background:#fff1f2!important}
+@media(max-width:700px){header{padding:9px 10px}header b{font-size:14px}main{padding:6px;gap:5px}.tabs button{padding:7px 9px;font-size:12px}.toolbar summary{padding:8px 10px}.floorbar{padding-top:8px}.final-panel{padding:12px}dialog{padding:17px}}
+@media(orientation:landscape) and (max-height:650px){header{padding:5px 10px}.toolbar summary{padding:6px 10px}.tabs button{padding:6px 10px}}
+
+/* 10.0 | Tablet (iPad) + PC: dotykové ovládání, bezpečné okraje, focení půdorysu */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+*{-webkit-tap-highlight-color:transparent}
+button,summary,label,select,.tabs,.floorbar{touch-action:manipulation}
+header,.tabs,.floorbar,.zoom-controls,.opening-counter,.empty-pick{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+canvas{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.tabs{-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.pick-btns{display:inline-flex;gap:7px;flex-wrap:wrap;border-radius:10px}
+.cam-btn{background:#087d87!important;color:#fff!important;font-weight:750}
+.cam-btn:hover{background:#06646e!important}
+.empty-pick{position:absolute;inset:0;z-index:7;display:flex;align-items:center;justify-content:center;background:#fffffff2;padding:16px;box-sizing:border-box;overflow:auto}
+.empty-card{max-width:430px;width:100%;text-align:center;display:grid;gap:12px}
+.empty-card h2{margin:0;font-size:22px;color:#14364b}
+.empty-card p{margin:0;color:#546b78;font-size:15px}
+.empty-card button{padding:15px 18px;font-size:17px;min-height:52px}
+body.has-plan .empty-pick,body.final-mode .empty-pick{display:none}
+body:not(.final-mode){padding-left:env(safe-area-inset-left)!important;padding-bottom:env(safe-area-inset-bottom)}
+.floorbar{padding-bottom:calc(12px + env(safe-area-inset-bottom));-webkit-overflow-scrolling:touch}
+@media (pointer:coarse){
+ input,select,textarea{font-size:16px}
+ button,select,summary{min-height:44px}
+ .toolbar-inner{gap:9px 12px;max-height:42dvh;-webkit-overflow-scrolling:touch}
+ .toolbar-inner input[type=text],.toolbar-inner select{min-height:44px;padding:8px}
+ .toolbar-inner input[type=range]{min-width:140px;height:32px}
+ input[type=checkbox]{width:22px;height:22px}
+ .toolbar-inner label{font-size:13px}
+ .tabs button{min-height:44px;padding:9px 14px;font-size:14px}
+ .zoom-controls{gap:8px;padding:7px}
+ .zoom-controls button{min-width:50px;min-height:50px;font-size:20px}
+ .zoom-controls .zoom-fit{font-size:13px}
+ .floorbar .view-tab,.floorbar .summary-tab{min-height:48px}
+ .floorbar .floor-tab,.floorbar .floor-add{min-height:48px;width:50px}
+ .modal-actions button{min-height:48px;padding:10px 18px}
+ dialog{width:min(520px,calc(100vw - 32px))}
+ .final-table input{min-height:42px}
+ .final-export button{min-height:48px}
+}
+@media (orientation:portrait) and (min-width:700px){
+ .tabs button{font-size:14px}
+}
+
+/* 10.0 | uložení, dialog, tlačítka mazání, Gmail */
+:root{color-scheme:light}
+html{height:100%}
+body:not(.final-mode){height:100%}
+.save-state{float:right;font-size:12px;opacity:.85;margin-left:12px;white-space:nowrap}
+.save-state[data-state="error"],.save-state[data-state="paused"],.save-state[data-state="unavailable"]{color:#ffd27a;opacity:1;font-weight:700}
+.tool-sep{flex:0 0 100%;height:0}
+.danger{color:#a73a3a!important;border-color:#e3c3c3!important}
+.danger-btn{background:#a73a3a!important;color:#fff!important}
+#uiText{white-space:pre-wrap;margin:0;line-height:1.45}
+#uiInput{width:100%;box-sizing:border-box;margin-top:12px}
+.mail-to{display:inline-flex;align-items:center;gap:6px;margin:0}
+.mail-to input{min-width:230px}
+
+/* 11: one stable canvas and a non-overlapping tablet inspector. */
+.quick-tools{display:flex;gap:6px;flex-shrink:0;overflow-x:auto;padding:2px}.quick-tools button{min-height:44px;white-space:nowrap}.quick-tools .chosen{background:#087d87;outline:2px solid #53c3c8}
+body.final-mode .quick-tools{display:none}
+#status{display:block!important;max-height:52px;min-height:28px;overflow:auto;font-size:13px;line-height:1.4}
+@media(max-width:1100px){
+ header>span:not(.save-state){display:none}
+ body:not(.final-mode){padding-right:88px!important;height:100dvh}
+ .floorbar{width:88px}.floorbar .view-tab,.floorbar .summary-tab{width:76px}
+ button,select,summary{min-height:44px} input,select,textarea{font-size:16px}
+ .toolbar[open]{position:absolute;left:8px;top:52px;bottom:12px;width:min(370px,calc(100vw - 110px));z-index:30;box-shadow:0 8px 35px #10283e55;display:flex;flex-direction:column}
+ .toolbar[open] .toolbar-inner{display:flex;flex-direction:column;align-items:stretch;max-height:none;overflow:auto;flex:1}
+ .toolbar-inner label{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+ .toolbar-inner button,.toolbar-inner select{min-height:44px}
+ .toolbar summary{min-height:44px;box-sizing:border-box}
+ .toolbar[open] summary:after{content:' ✕ Zavřít';float:right;color:#087d87}
+ .tabs{padding-bottom:2px}.tabs button{min-height:44px;font-size:13px}
+ main{gap:4px!important;padding:5px!important}
+ .quick-tools button{font-size:13px;padding:8px 10px}
+ dialog{box-sizing:border-box;max-width:calc(100vw - 24px);width:500px;max-height:85dvh}
+}
+@media(max-width:600px){.quick-tools{gap:4px}.quick-tools button{padding:6px 8px}.opening-counter{display:none}.zoom-controls{left:6px;bottom:6px}.zoom-controls button{min-width:42px;min-height:42px}}
+
+body.measure-tools-hidden .quick-tools{display:none}
+#measureDone{background:#087d87}
+#roomDialog,#workRoomDialog,#skirtingDialog{box-sizing:border-box;width:min(520px,calc(100vw - 24px));padding:14px;max-height:calc(100dvh - 24px)}
+#roomDialog h2,#workRoomDialog h2,#skirtingDialog h2{font-size:17px;margin:0 0 8px}
+#roomDialog p,#workRoomDialog p,#skirtingDialog p{margin:5px 0;font-size:13px}
+#roomDialog .modal-fields,#skirtingDialog .modal-fields{gap:7px}
+#roomDialog input,#roomDialog textarea,#workRoomDialog input,#workRoomDialog textarea,#skirtingDialog input,#skirtingDialog textarea{box-sizing:border-box;padding:7px;max-width:100%;font-size:16px}
+#roomDialog textarea,#workRoomDialog textarea,#skirtingDialog textarea{height:48px;min-height:40px}
+#materialCoverage,#workCompletion{padding:8px!important;margin:7px 0!important}
+#roomDialog button,#workRoomDialog button,#skirtingDialog button{min-height:40px;padding:7px 10px!important;font-size:14px}
+#roomDialog label,#workRoomDialog label{margin-top:5px!important;margin-bottom:5px!important}
+#roomDialog .modal-actions,#workRoomDialog .modal-actions,#skirtingDialog .modal-actions{padding-top:7px;margin-top:8px}
+#materialRoomToggle,#workRoomToggle,#skirtingRoomToggle{margin-top:5px!important}
+</style><header><b>Výměry podlah</b> &nbsp; <span style="opacity:.72">|&nbsp; Projektové zaměřování &amp; kalkulace &nbsp;·&nbsp; v14.0</span><span id="saveState" class="save-state"></span></header><main><details class="toolbar" id="toolsPanel"><summary>⚙ Nástroje a nastavení <span class="tools-hint">Nahrání půdorysu · měřítko · okna/dveře · výpočet</span></summary><div class="toolbar-inner"><span id="pickBtns" class="pick-btns"><button type="button" id="camBtn" class="cam-btn">📷 Vyfotit půdorys</button><button type="button" id="galBtn" class="secondary">🖼 Z galerie / souboru</button></span><input id="file" type="file" accept="image/*" hidden><input id="fileCam" type="file" accept="image/*" capture="environment" hidden><label title="U fotek z fotoaparátu srovná stíny a nerovnoměrné osvětlení papíru"><input id="enhance" type="checkbox" checked> Vyrovnat osvětlení u fotek</label><label>Filtr tloušťky (9 = automaticky) <input id="thick" type="range" min="3" max="30" value="9"><span id="thickv">9</span></label><label>Práh černé <input id="dark" type="range" min="45" max="220" value="125"><span id="darkv">125</span></label><label title="Vyplní šrafované konstrukce při analýze, původní obrázek nemění"><input id="fillHatch" type="checkbox" checked> Spojit dvojité obrysy stěn</label><button id="run">Znovu analyzovat</button><button type="button" id="measureWall" class="measure-red" title="Spustit označení stěny">✛ Označit stěnu</button><label>Vybraná délka <input id="length" type="text" inputmode="decimal" placeholder="např. 4,25" style="width:115px"></label><select id="unit"><option value="m">metry</option><option value="cm">centimetry</option></select><button id="saveLength">Uložit délku</button><label>Všechny dveře – šířka futer (cm) <input id="doorWidth" type="text" inputmode="decimal" value="90" style="width:75px"></label><label>Vložit otvor <select id="openingTool"><option value="none">Vypnuto</option><option value="window">Okno (modrá)</option><option value="door">Dveře (červená)</option></select></label><button id="undoOpening">Zpět</button><button id="clearOpenings">Smazat otvory</button><button id="roomsCalc">Vypočítat místnosti</button><span class="tool-sep"></span><button type="button" id="delFloor" class="secondary danger">🗑 Smazat patro</button><button type="button" id="delAll" class="secondary danger">🗑 Smazat vše</button><button type="button" id="bkExport" class="secondary">💾 Záloha do souboru</button><button type="button" id="bkImport" class="secondary">📂 Načíst zálohu</button><input id="bkFile" type="file" accept=".json,application/json" hidden></div></details><div class="floorbar" id="floorBar" aria-label="Patra projektu"></div><div class="tabs"><button id="orig" class="active">Originál</button><button id="compare">Pevné stěny</button><button id="primerTab" class="tab-group-start">Penetrace</button><button id="screedTab">Stěrka</button><button id="glueTab">Lepidlo</button><button id="roomsTab">Podlahovina</button><button id="skirtingTab">Lišty</button><button id="workSand" class="work-step">Broušení</button><button id="workVacuum" class="work-step">Vysátí</button><button id="workWeld" class="work-step">Lepení + svařování</button><button id="workSkirting" class="work-step">Lištování</button><button id="workScreed" class="work-step">Stěrkování</button><button id="workPrimer" class="work-step">Penetrování</button><button id="workSilicone" class="work-step">Silikonování</button></div><div class="quick-tools" id="measureTools"><button id="measureDone" title="Skrýt měřicí lištu">✓ Hotovo</button><button id="quickMeasure">📏 Měřítko</button><button id="spanH" class="secondary" title="Klepni do místnosti na vodorovnou kótu">Rozměr ↔</button><button id="spanV" class="secondary" title="Klepni do místnosti na svislou kótu">Rozměr ↕</button><button id="quickWindow">Okno</button><button id="quickDoor">Dveře</button><button id="quickSelect" class="secondary">Výběr</button><button id="quickUndo" class="secondary">Zpět</button><button id="quickCalc">Vypočítat</button><button id="editAdd" class="secondary">Doplnit stěnu</button><button id="editErase" class="secondary">Odebrat úsek</button></div><div class="frame"><div id="openingCounter" class="opening-counter" aria-live="polite"><span>🚪 Dveře: <strong id="doorCount">0</strong></span><span>🪟 Okna: <strong id="windowCount">0</strong></span></div><canvas id="view"></canvas><div class="empty-pick" id="emptyPick"><div class="empty-card"><h2>Začni půdorysem</h2><p>Vyfoť papírový půdorys tabletem, nebo vyber hotový obrázek.</p><button type="button" id="camBtn2" class="cam-btn">📷 Vyfotit půdorys</button><button type="button" id="galBtn2" class="secondary">🖼 Vybrat z galerie / souboru</button></div></div></div><div class="note" id="openingsHelp">Vyber okno nebo dveře a klikni přibližně doprostřed mezery: čára se přichytí ke stěnám. Pokud se nepodaří konce najít, klikni na oba konce ručně. Modrá = okno, červená = dveře. Kliknutím na hotovou spojnici ji odstraníš. Šířka futer platí pro všechny dveře.</div><div id="finalList" class="final-panel" style="display:none"></div><div id="workList" style="display:none"></div><div id="skirtingList" style="background:white;padding:12px;margin:10px 0;border-radius:8px;display:none"></div><div id="roomList" style="background:white;padding:12px;margin:10px 0;border-radius:8px;display:none"></div><div class="note" id="status">Nahraj půdorys. V pohledu Pevné stěny zkontroluj návrh rozpoznání, nastav měřítko a označ otvory.</div><div class="note">Vypni nástroj Vložit otvor, pak klikni na stěnu v Originálu nebo v Porovnání. Označí se měřicí úsek mezi napojeními dalších konstrukcí. Samotné stěny se nerozdělují ani nemažou. Zadej známou délku a ulož ji. Pomocné tenké čáry jsou filtrovány podle tloušťky, ale filtr není neomylný. Parametr tloušťky se vztahuje k obrázku zmenšenému nejvýše na 1600 px.</div></main><dialog id="uiDialog" aria-labelledby="uiTitle"><h2 id="uiTitle"></h2><p id="uiText"></p><input id="uiInput" type="text" maxlength="100" style="display:none"><div class="modal-actions"><button type="button" class="secondary" id="uiCancel">Zrušit</button><button type="button" id="uiOk">OK</button></div></dialog><dialog id="camDialog" aria-labelledby="camTitle"><h2 id="camTitle">Vyfotit půdorys</h2><video id="camVideo" autoplay playsinline muted style="width:100%;border-radius:10px;background:#000;max-height:60dvh"></video><p style="font-size:13px;color:#546b78;margin:10px 0 0">Foť kolmo na papír, celý půdorys a bez stínů. Perspektivní zkreslení se automaticky nevyrovnává.</p><div class="modal-actions"><button type="button" class="secondary" id="camCancel">Zrušit</button><button type="button" id="camShot">📷 Vyfotit</button></div></dialog><dialog id="roomDialog" aria-labelledby="roomDialogTitle"><h2 id="roomDialogTitle">Upravit místnost</h2><div class="modal-fields"><label>Název místnosti<input id="roomNameEdit" type="text" maxlength="100"></label><label>Vlastní popisek<textarea id="roomNoteEdit" rows="4" maxlength="400" placeholder="Např. vinyl, dub přírodní"></textarea></label><div id="roomAreaEdit" style="font-weight:600"></div><label id="screedMaterialFactorLabel" style="display:none">Tloušťka stěrky (mm)<input id="screedMaterialFactor" type="number" min="0.1" step="0.1"></label><div id="materialCoverage" style="display:none;border:1px solid #cbd5e1;border-radius:10px;padding:12px;margin-top:12px"><b>Rozsah materiálu v místnosti</b><p id="materialCoverageHint"></p><button type="button" id="materialAll" style="width:100%;padding:11px">✓ Celá místnost</button><label style="display:block;margin-top:10px">Nebo zadej plochu v m²<input id="materialPartial" type="text" inputmode="decimal" placeholder="např. 12,5" style="display:block;width:100%;box-sizing:border-box;margin-top:5px"></label><button type="button" class="secondary" id="materialClear" style="width:100%;margin-top:8px">Zrušit zadaný rozsah</button><p id="materialCoverageState"></p></div></div><button type="button" id="materialRoomToggle" style="width:100%;margin-top:12px;padding:12px;background:#a73a3a;color:white">✕ Vypnout místnost v této záložce</button><p id="materialRoomToggleState" style="font-weight:600"></p><div class="modal-actions"><button class="secondary" id="roomCancel">Zrušit</button><button id="roomSave" autofocus>Uložit</button></div></dialog><dialog id="skirtingDialog" aria-labelledby="skirtingDialogTitle"><h2 id="skirtingDialogTitle">Popisek k lištám</h2><div class="modal-fields"><label>Místnost<input id="skirtingNameEdit" type="text" readonly></label><label>Vlastní popisek<textarea id="skirtingNoteEdit" rows="4" maxlength="400" placeholder="Např. bílé soklové lišty 60 mm"></textarea></label><div id="skirtingLengthEdit" style="font-weight:600"></div></div><button type="button" id="skirtingRoomToggle" style="width:100%;margin-top:12px;padding:12px;background:#a73a3a;color:white">✕ Vypnout místnost pro lišty</button><p id="skirtingRoomToggleState" style="font-weight:600"></p><div class="modal-actions"><button class="secondary" id="skirtingCancel">Zrušit</button><button id="skirtingSave" autofocus>Uložit</button></div></dialog><dialog id="workRoomDialog"><h2 id="workRoomTitle">Práce v místnosti</h2><p id="workRoomArea"></p><label style="display:block;margin:12px 0">Popis práce v této místnosti<textarea id="workRoomNote" rows="3" maxlength="400" placeholder="Např. broušení pouze u vstupu" style="display:block;width:100%;box-sizing:border-box;margin-top:6px"></textarea></label><label id="screedWorkFactorLabel" style="display:none;margin:8px 0">Počet úkonů stěrkování<input id="screedWorkFactor" type="number" min="1" step="1" style="display:block;width:100%"></label><div id="workCompletion" style="border:1px solid #cbd5e1;border-radius:10px;padding:12px;margin:12px 0">
+<strong>Provedená práce</strong><p id="workCompletionHint" style="margin:6px 0"></p>
+<button type="button" id="workDoneAll" style="width:100%;margin:6px 0;padding:12px">✓ Celá místnost hotová</button>
+<label style="display:block;margin:8px 0">Nebo skutečně hotové množství (<span id="workDoneUnit">m²</span>)<input id="workDonePartial" type="text" inputmode="decimal" placeholder="např. 12,5" style="display:block;width:100%;box-sizing:border-box;margin-top:5px"></label>
+<button type="button" id="workDoneClear" class="secondary" style="width:100%">Zrušit označení hotové práce</button>
+<p id="workDoneState" style="font-weight:700"></p></div><p id="workRoomState" style="font-weight:700"></p><button type="button" id="workRoomToggle" style="width:100%;padding:16px;font-size:17px">Vypnout místnost</button><input type="checkbox" id="workRoomEnabled" hidden><div class="modal-actions"><button id="workRoomClose" autofocus>Hotovo</button></div></dialog><script>
+let mailToValue='';
+let _uiChain=Promise.resolve();
+function uiShow(o){
+ const p=_uiChain.then(()=>new Promise(res=>{
+  const g=id=>document.getElementById(id),d=g('uiDialog');
+  g('uiTitle').textContent=o.title||'';g('uiTitle').style.display=o.title?'':'none';
+  g('uiText').textContent=o.text||'';
+  const inp=g('uiInput');inp.style.display=o.input?'block':'none';inp.value=o.value||'';
+  g('uiCancel').style.display=o.cancel===false?'none':'';
+  const ok=g('uiOk');ok.textContent=o.ok||'OK';ok.classList.toggle('danger-btn',!!o.danger);
+  const done=v=>{inp.onkeydown=null;d.oncancel=null;try{d.close()}catch(e){}res(v)};
+  ok.onclick=()=>done(o.input?inp.value:true);
+  g('uiCancel').onclick=()=>done(o.input?null:false);
+  d.oncancel=e=>{e.preventDefault();done(o.input?null:false)};
+  inp.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();ok.click()}};
+  d.showModal();if(o.input){inp.focus();inp.select()}else ok.focus();
+ }));
+ _uiChain=p.then(()=>{},()=>{});return p;
+}
+function uiConfirm(text,okLabel,danger){return uiShow({text,ok:okLabel||'OK',danger:!!danger})}
+window.alert=function(m){uiShow({text:String(m),cancel:false})};
+
+const $=id=>document.getElementById(id),canvas=$('view'),ctx=canvas.getContext('2d',{willReadFrequently:true});
+const planFrame=document.querySelector('.frame');
+const zoomBar=document.createElement('div');zoomBar.className='zoom-controls';
+zoomBar.innerHTML='<button type="button" aria-label="Oddálit" title="Oddálit">−</button><button type="button" class="zoom-fit" title="Přizpůsobit půdorys">100 %</button><button type="button" aria-label="Přiblížit" title="Přiblížit">+</button>';
+planFrame.append(zoomBar);
+let zoom=1,panX=0,panY=0,fitWidth=1,fitHeight=1;
+function updatePlanTransform(){
+ const w=canvas.width||1,h=canvas.height||1;
+ const rect=planFrame.getBoundingClientRect();
+ const ratio=Math.min((rect.width-4)/w,(rect.height-4)/h);
+ const base=Math.max(.001,Number.isFinite(ratio)?ratio:1);
+ fitWidth=w*base;fitHeight=h*base;
+ if(canvas.style.width!==fitWidth+'px')canvas.style.width=fitWidth+'px';if(canvas.style.height!==fitHeight+'px')canvas.style.height=fitHeight+'px';
+ canvas.style.transform=`translate(${panX}px,${panY}px) scale(${zoom})`;
+ zoomBar.children[1].textContent=Math.round(zoom*100)+' %';
+}
+function changeZoom(factor,clientX,clientY){
+ const old=zoom,next=Math.max(1,Math.min(12,zoom*factor));
+ if(next===old)return;
+ const r=planFrame.getBoundingClientRect();
+ const px=(clientX??(r.left+r.width/2))-(r.left+r.width/2);
+ const py=(clientY??(r.top+r.height/2))-(r.top+r.height/2);
+ panX=px-(px-panX)*next/old;panY=py-(py-panY)*next/old;
+ zoom=next;if(zoom===1){panX=0;panY=0}updatePlanTransform();
+}
+function fitPlan(){zoom=1;panX=0;panY=0;updatePlanTransform()}
+zoomBar.children[0].onclick=()=>changeZoom(1/1.25);
+zoomBar.children[1].onclick=fitPlan;
+zoomBar.children[2].onclick=()=>changeZoom(1.25);
+planFrame.addEventListener('wheel',e=>{if(summaryActive)return;e.preventDefault();changeZoom(e.deltaY<0?1.15:1/1.15,e.clientX,e.clientY)},{passive:false});
+const pointers=new Map();let previousPinch=0,dragPoint=null,suppressClick=false,dragStart=null,dragMoved=false;
+canvas.addEventListener('pointerdown',e=>{pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});canvas.setPointerCapture(e.pointerId);if(pointers.size===1){dragPoint={x:e.clientX,y:e.clientY};dragStart={x:e.clientX,y:e.clientY};dragMoved=false;suppressClick=false}else{dragPoint=null;previousPinch=0;suppressClick=true}});
+canvas.addEventListener('pointermove',e=>{
+ if(!pointers.has(e.pointerId))return;
+ pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+ if(pointers.size>=2){const a=[...pointers.values()],dist=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);if(previousPinch)changeZoom(dist/previousPinch,(a[0].x+a[1].x)/2,(a[0].y+a[1].y)/2);previousPinch=dist;suppressClick=true}
+ else if(dragPoint&&zoom>1){const dx=e.clientX-dragPoint.x,dy=e.clientY-dragPoint.y;if(!dragMoved){const th=e.pointerType==='mouse'?3:10;if(dragStart&&Math.hypot(e.clientX-dragStart.x,e.clientY-dragStart.y)<th)return;dragMoved=true;suppressClick=true}panX+=dx;panY+=dy;dragPoint={x:e.clientX,y:e.clientY};updatePlanTransform()}
+});
+function endPointer(e){pointers.delete(e.pointerId);dragPoint=null;previousPinch=0;if(pointers.size===0&&suppressClick){setTimeout(()=>{suppressClick=false},100)}}
+canvas.addEventListener('pointerup',endPointer);canvas.addEventListener('pointercancel',endPointer);
+new ResizeObserver(()=>updatePlanTransform()).observe(planFrame);
+let previousLayout=[];let spanAxis=null;let wallEdits=[],wallEditTool='none',wallStart=null,wallBase=null;let hatchFilled=null;let rooms=[],roomMap=null,roomOverlay=null,roomValid=false;let windowsAuto=[];let manualWindowStart=null,manualWindowMode=false;let editedRoom=null;let editedSkirtingRoom=null;let skirtingNotes={};let finalPrices={};let img=null,mode='orig',mask=null,labels=null,parts=[],hidden=new Set(),selected=-1,selection=null,calibration=null,W=0,H=0,openings=[];
+// Každé patro má samostatný půdorys, otvory, kalibraci, místnosti, lišty a ceny.
+const materialTabs=['glueTab','primerTab','screedTab'];
+const workTabs=['workSand','workVacuum','workWeld','workSkirting','workScreed','workPrimer','workSilicone'];
+const workLabels={workSand:'Broušení',workVacuum:'Vysátí',workWeld:'Lepení + svařování',workSkirting:'Lištování',workScreed:'Stěrkování',workPrimer:'Penetrování',workSilicone:'Silikonování'};
+const allTabs=['orig','compare','roomsTab',...materialTabs,'skirtingTab',...workTabs];
+const materialLabels={glueTab:'Lepidlo',primerTab:'Penetrace',screedTab:'Stěrka'};
+let screedRoomFactors={material:{},work:{}};let materialNotes={};let materialCoverage={};let roomDisabled={};let screedFactors={materialMm:1,workPasses:1};
+function roomIsEnabled(tab,id){return !(roomDisabled[tab]||[]).includes(id)}
+function setRoomEnabled(tab,id,enabled){const ids=new Set(roomDisabled[tab]||[]);if(enabled)ids.delete(id);else ids.add(id);roomDisabled[tab]=[...ids];render();renderFinal();}
+function visibleRoomNote(r){if(workTabs.includes(mode))return (workNotes[mode]||{})[r.id]||'';if(mode==='skirtingTab')return skirtingNotes[r.id]||'';if(materialTabs.includes(mode))return (materialNotes[mode]||{})[r.id]||'';return mode==='roomsTab'?r.note||'':'';}
+let measuringWall=false;let manualMeasureStart=null;
+function updateMeasureButton(){const b=$('measureWall');if(!b)return;const stage=calibration?'green':selection?'orange':'red';b.className='measure-'+stage;b.textContent=stage==='green'?'✓ Měřítko uloženo':stage==='orange'?'✛ Stěna označena':'✛ Označit stěnu';b.title=stage==='green'?'Měřítko je uloženo. Kliknutím lze vybrat jinou stěnu.':stage==='orange'?'Zadej skutečnou délku a klikni na Uložit délku.':'Klikni a potom označ stěnu v půdorysu.';}
+$('measureWall').onclick=()=>{if(!img){$('toolsPanel').open=true;$('pickBtns').classList.add('required-missing');$('status').textContent='Nejprve nahraj půdorys.';return;}$('toolsPanel').open=false;wallEditTool='none';wallStart=null;measuringWall=true;manualMeasureStart=null;selection=null;spanAxis=null;$('openingTool').value='none';setMode('orig');updateMeasureButton();$('status').textContent='Klikni na stěnu pro výběr celého úseku. Mimo stěnu můžeš označit dva konce známé kóty.';};
+const floorProjects=[];
+let activeFloor=0;
+let activeView='material';
+let summaryActive=false;let workItems=[];let nextWorkId=1;let workExcluded={};let workNotes={};let workDone={};let editedWorkRoom=null;const areaWorkTabs=['workSand','workVacuum','workWeld','workScreed','workPrimer'];const completionTabs=[...areaWorkTabs,'workSkirting','workSilicone'];
+const floorViews=[];
+function floorCapture(){return {previousLayout,lastCamImage,
+ img,mode,mask,labels,parts,hidden,selected,selection,calibration,W,H,openings,wallEdits,wallBase,
+ rooms,roomMap,roomOverlay,roomValid,windowsAuto,manualWindowStart,manualWindowMode,
+ skirtingNotes,materialNotes,materialCoverage,roomDisabled,screedFactors:{...screedFactors},screedRoomFactors:structuredClone(screedRoomFactors),finalPrices,workItems,nextWorkId,workExcluded,workNotes,workDone,roomNodes:Array.from($('roomList').childNodes),
+ status:$('status').textContent,doorWidth:$('doorWidth').value,
+ thick:$('thick').value,dark:$('dark').value,
+ length:$('length').value,unit:$('unit').value,openingTool:$('openingTool').value
+};}
+function floorEmpty(){return {
+ wallEdits:[],wallBase:null,img:null,mode:'orig',mask:null,labels:null,parts:[],hidden:new Set(),selected:-1,
+ selection:null,calibration:null,W:0,H:0,openings:[],rooms:[],roomMap:null,
+ roomOverlay:null,roomValid:false,windowsAuto:[],manualWindowStart:null,
+ manualWindowMode:false,skirtingNotes:{},materialNotes:{},materialCoverage:{},roomDisabled:{},screedFactors:{materialMm:1,workPasses:1},screedRoomFactors:{material:{},work:{}},finalPrices:{},workItems:[],nextWorkId:1,workExcluded:{},workNotes:{},workDone:{},roomNodes:[],
+ status:'Nové patro: nahraj jeho půdorys.',doorWidth:'90',thick:'9',dark:'125',
+ length:'',unit:'m',openingTool:'none'
+};}
+function floorApply(s){
+ ({img,mode,mask,labels,parts,hidden,selected,selection,calibration,W,H,openings,wallEdits,wallBase,
+ rooms,roomMap,roomOverlay,roomValid,windowsAuto,manualWindowStart,manualWindowMode,
+ skirtingNotes,materialNotes,materialCoverage,roomDisabled,finalPrices,workItems,nextWorkId,workExcluded,workNotes,workDone}=s);
+ previousLayout=s.previousLayout||[];lastCamImage=s.lastCamImage||null;spanAxis=null;wallEdits=s.wallEdits||[];wallBase=s.wallBase||mask?.slice();wallEditTool='none';wallStart=null;screedFactors=s.screedFactors||{materialMm:1,workPasses:1};screedRoomFactors=s.screedRoomFactors||{material:{},work:{}};
+ editedRoom=null;editedSkirtingRoom=null;
+ $('roomList').replaceChildren(...s.roomNodes);
+ $('status').textContent=s.status;
+ for(const key of ['doorWidth','thick','dark','length','unit','openingTool'])$(key).value=s[key];
+ $('thickv').textContent=s.thick;$('darkv').textContent=s.dark;
+ $('file').value='';canvas.width=W||1;canvas.height=H||1;
+ measuringWall=false;manualMeasureStart=null;renderSkirtingList();setMode(mode);updateMeasureButton();
+}
+function floorSave(){floorProjects[activeFloor].state=floorCapture();}
+function floorRenderTabs(){
+ const bar=$('floorBar');bar.replaceChildren();
+ for(const [view,label] of [['material','Materiál'],['work','Práce']]){
+  const b=document.createElement('button');b.className='view-tab'+(activeView===view?' selected':'');
+  b.textContent=label;b.setAttribute('aria-pressed',String(activeView===view));
+  b.title=label+' – stejný půdorys aktuálního patra';b.onclick=()=>switchView(view);bar.append(b);
+ }
+ const summary=document.createElement('button');summary.className='summary-tab'+(summaryActive?' selected':'');summary.textContent='Závěr';summary.title='Souhrn materiálu i práce na tomto patře';summary.onclick=()=>openSummary();bar.append(summary);
+ const vd=document.createElement('div');vd.className='view-divider';bar.append(vd);
+ const section=document.createElement('span');section.className='floor-section';section.textContent='PATRA';bar.append(section);
+ floorProjects.forEach((floor,i)=>{
+  const btn=document.createElement('button');btn.className='floor-tab'+(i===activeFloor?' selected':'');
+  btn.textContent=String(i+1);btn.title=floor.name+' – klepni pro přepnutí; dvojklik nebo dlouhé podržení = přejmenovat';
+  btn.setAttribute('aria-label','Patro '+(i+1)+': '+floor.name);
+  let lpT=null,lpFired=false;btn.addEventListener('pointerdown',ev=>{if(ev.pointerType==='mouse')return;lpFired=false;clearTimeout(lpT);lpT=setTimeout(()=>{lpFired=true;floorRename(i)},650)});for(const t of ['pointerup','pointerleave','pointercancel'])btn.addEventListener(t,()=>clearTimeout(lpT));btn.onclick=()=>{if(lpFired){lpFired=false;return}floorSwitch(i)};btn.ondblclick=()=>floorRename(i);bar.append(btn);
+ });
+ const divider=document.createElement('div');divider.className='floor-divider';bar.append(divider);
+ const plus=document.createElement('button');plus.className='floor-add';plus.textContent='+';
+ plus.title='Přidat další patro';plus.setAttribute('aria-label','Přidat patro');plus.onclick=floorAdd;bar.append(plus);
+ const hint=document.createElement('span');hint.className='floor-help';hint.textContent='Patra';bar.append(hint);
+}
+function switchView(view){
+ if(view===activeView&&!summaryActive)return;
+ if(summaryActive){summaryActive=false;document.body.classList.remove('final-mode');$('finalList').style.display='none';}
+ // Uložení zvolených záložek, nikoli kopie půdorysu.
+ floorViews[activeFloor]??={material:'orig',work:'orig'};
+ floorViews[activeFloor][activeView]=mode;
+ activeView=view;
+ document.body.classList.toggle('work-view',view==='work');
+ let target=floorViews[activeFloor][view]||'orig';
+ if(rooms.length&&roomValid&&['orig','compare'].includes(target))target=view==='work'?'workSand':'roomsTab';
+ setMode(view==='work'&&!['orig','compare',...workTabs].includes(target)?'workSand':view==='material'&&workTabs.includes(target)?'roomsTab':target);
+ floorRenderTabs();
+ $('status').textContent=view==='work'?'Práce: vyber činnost v horních záložkách.':'Materiál: výpočty a popisky materiálů nad společným půdorysem.';
+}
+function floorSwitch(i){if(i===activeFloor)return;
+ const wasSummary=summaryActive;summaryActive=false;
+ if($('roomDialog').open)$('roomDialog').close();if($('skirtingDialog').open)$('skirtingDialog').close();
+ floorViews[activeFloor]??={material:'orig',work:'orig'};floorViews[activeFloor][activeView]=mode;
+ floorSave();activeFloor=i;floorApply(floorProjects[i].state);
+ const next=floorViews[i]?.[activeView]||(rooms.length?(activeView==='work'?'workSand':'roomsTab'):'orig');setMode(activeView==='work'&&!['orig','compare',...workTabs].includes(next)?'workSand':activeView==='material'&&workTabs.includes(next)?'roomsTab':next);
+ if(wasSummary)openSummary();else floorRenderTabs();
+}
+function floorAdd(){
+ summaryActive=false;document.body.classList.remove('final-mode');
+ const name=(floorProjects.length+1)+'. patro';
+ floorViews[activeFloor]??={material:'orig',work:'orig'};floorViews[activeFloor][activeView]=mode;
+ floorSave();floorProjects.push({name,state:floorEmpty()});activeFloor=floorProjects.length-1;
+ floorViews[activeFloor]={material:'orig',work:'orig'};
+ floorApply(floorProjects[activeFloor].state);floorRenderTabs();
+}
+async function floorRename(i){const value=await uiShow({title:'Přejmenovat patro',text:'Nový název patra:',input:true,value:floorProjects[i].name,ok:'Uložit'});
+ if(value!==null&&value.trim()){floorProjects[i].name=value.trim();floorRenderTabs();}}
+floorProjects.push({name:'1. patro',state:floorEmpty()});floorViews.push({material:'orig',work:'orig'});floorRenderTabs();$('toolsPanel').open=true;
+function setMode(m){
+ if(summaryActive)return;
+ if(activeView==='work'&&!['orig','compare',...workTabs].includes(m))m='workSand';
+ mode=m;
+ document.body.classList.toggle('plan-only',m!=='orig'&&m!=='compare');
+ if(m!=='orig'&&m!=='compare'&&rooms.length)$('toolsPanel').open=false;
+ fitPlan();
+ floorViews[activeFloor]??={material:'orig',work:'orig'};
+ floorViews[activeFloor][activeView]=m;
+ const final=false;
+ document.body.classList.toggle('final-mode',final);
+ $('roomList').style.display=((m==='roomsTab'||materialTabs.includes(m))&&rooms.length)?'block':'none';
+ $('skirtingList').style.display=(m==='skirtingTab'&&rooms.length)?'block':'none';
+ $('finalList').style.display='none';
+ $('workList').style.display=activeView==='work'&&workTabs.includes(m)?'block':'none';
+ if(activeView==='work'&&workTabs.includes(m))renderWork();
+ document.querySelector('.frame').style.display=final?'none':'flex';
+ $('openingsHelp').style.display=final||materialTabs.includes(m)?'none':'block';
+
+ for(const t of allTabs)if($(t))$(t).classList.toggle('active',t===m);
+ if(workTabs.includes(m)){$('status').textContent='Práce – '+workLabels[m]+': samostatné položky pro toto patro, společný půdorys a Závěr.';}
+ if(materialTabs.includes(m)){
+  $('status').textContent=materialLabels[m]+': stejné vypočtené místnosti a jejich plochy jako v Podlahovině. Kliknutím na místnost upravíš její název a popisek.';
+ }
+ render();
+ 
+}
+for(const t of allTabs)$(t).onclick=()=>{if(summaryActive){summaryActive=false;document.body.classList.remove('final-mode');floorRenderTabs();}setMode(t)};
+for(let id of ['thick','dark'])$(id).oninput=()=>{$(id+'v').textContent=$(id).value};$('run').onclick=reanalyzePlan;$('fillHatch').onchange=()=>{if(img)reanalyzePlan()};
+
+let lastCamImage=null;
+function enhancePhoto(im){
+ const sc=Math.min(1,1600/im.width,1600/im.height),w=Math.max(1,Math.round(im.width*sc)),h=Math.max(1,Math.round(im.height*sc));
+ const c=document.createElement('canvas');c.width=w;c.height=h;
+ const x=c.getContext('2d',{willReadFrequently:true});x.drawImage(im,0,0,w,h);
+ const d=x.getImageData(0,0,w,h),p=d.data,g=new Uint8ClampedArray(w*h);
+ for(let i=0,j=0;i<p.length;i+=4,j++)g[j]=(p[i]*299+p[i+1]*587+p[i+2]*114)/1000;
+ const B=32,bw=Math.ceil(w/B),bh=Math.ceil(h/B),bg=new Float32Array(bw*bh);
+ for(let by=0;by<bh;by++)for(let bx=0;bx<bw;bx++){
+  const vals=[];
+  for(let yy=by*B;yy<Math.min(h,by*B+B);yy+=2)for(let xx=bx*B;xx<Math.min(w,bx*B+B);xx+=2)vals.push(g[yy*w+xx]);
+  vals.sort((a,b)=>a-b);
+  bg[by*bw+bx]=vals[Math.min(vals.length-1,Math.floor(vals.length*.9))]||255;
+ }
+ for(let y=0;y<h;y++){
+  const fy=Math.max(0,Math.min(bh-1,y/B-.5)),y0=Math.floor(fy),y1=Math.min(bh-1,y0+1),ty=fy-y0;
+  for(let xq=0;xq<w;xq++){
+   const fx=Math.max(0,Math.min(bw-1,xq/B-.5)),x0=Math.floor(fx),x1=Math.min(bw-1,x0+1),tx=fx-x0;
+   const b=(bg[y0*bw+x0]*(1-tx)+bg[y0*bw+x1]*tx)*(1-ty)+(bg[y1*bw+x0]*(1-tx)+bg[y1*bw+x1]*tx)*ty;
+   const v=Math.min(255,g[y*w+xq]/Math.max(70,b)*255),k=(y*w+xq)*4;
+   const gain=v/Math.max(1,g[y*w+xq]);p[k]=Math.min(255,p[k]*gain);p[k+1]=Math.min(255,p[k+1]*gain);p[k+2]=Math.min(255,p[k+2]*gain);p[k+3]=255;
+  }
+ }
+ x.putImageData(d,0,0);
+ return c;
+}
+function applyPlanImage(im,fromCamera){
+ if(img && im!==lastCamImage){
+  rooms=[];previousLayout=[];workDone={};workNotes={};workExcluded={};roomDisabled={};
+  materialCoverage={};materialNotes={};skirtingNotes={};screedRoomFactors={material:{},work:{}};
+ }
+ document.body.classList.remove('measure-tools-hidden');spanAxis=null;wallEdits=[];wallStart=null;wallEditTool='none';lastCamImage=fromCamera?im:null;
+ let src=im;
+ if(fromCamera&&$('enhance').checked){try{src=enhancePhoto(im)}catch(err){console.error(err);src=im}}
+ img=src;
+ const sc=Math.min(1,1600/im.width,1600/im.height);
+ W=Math.round(im.width*sc);H=Math.round(im.height*sc);
+ canvas.width=W;canvas.height=H;
+ if(typeof fitPlan==='function')fitPlan();
+ analyze();
+}
+function loadPlanFile(f,fromCamera){
+ if(!f)return;
+ const targetFloor=floorProjects[activeFloor];
+ $('status').textContent='Načítám fotografii…';
+ const fail=()=>{$('status').textContent='Obrázek se nepodařilo načíst.';alert('Obrázek se nepodařilo načíst. Zkus jiný soubor (JPG nebo PNG).')};
+ const r=new FileReader();
+ r.onerror=fail;
+ r.onload=()=>{const im=new Image();im.onload=()=>{if(floorProjects[activeFloor]===targetFloor)applyPlanImage(im,!!fromCamera)};im.onerror=fail;im.src=r.result};
+ r.readAsDataURL(f);
+}
+$('file').onchange=e=>{const f=e.target.files[0];e.target.value='';loadPlanFile(f,false)};
+$('fileCam').onchange=e=>{const f=e.target.files[0];e.target.value='';loadPlanFile(f,true)};
+$('enhance').onchange=()=>{if(lastCamImage){const savedCalibration=calibration,savedOpenings=openings.slice(),savedEdits=wallEdits.slice(),computed=roomValid;
+ applyPlanImage(lastCamImage,true);wallEdits=savedEdits;applyWallEdits();calibration=savedCalibration;openings=savedOpenings;
+ if(computed&&calibration)calculateRooms();updateMeasureButton();render()}};
+let camStream=null;
+function stopCam(){if(camStream){camStream.getTracks().forEach(t=>t.stop());camStream=null}$('camVideo').srcObject=null}
+function isTouchDevice(){return (navigator.maxTouchPoints||0)>0&&window.matchMedia('(pointer:coarse)').matches}
+async function openCamera(){
+ if(isTouchDevice()||!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){$('fileCam').click();return}
+ try{
+  camStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'},width:{ideal:3840},height:{ideal:2160}},audio:false});
+  $('camVideo').srcObject=camStream;$('camDialog').showModal();
+ }catch(err){stopCam();alert('Kameru se nepodařilo spustit ('+((err&&err.name)||'chyba')+'). Povol přístup ke kameře, nebo použij „Z galerie / souboru“.')}
+}
+$('camShot').onclick=()=>{
+ const v=$('camVideo');if(!v.videoWidth)return;
+ const c=document.createElement('canvas');c.width=v.videoWidth;c.height=v.videoHeight;c.getContext('2d').drawImage(v,0,0);
+ c.toBlob(b=>{if(!b)return;stopCam();$('camDialog').close();loadPlanFile(new File([b],'pudorys.jpg',{type:'image/jpeg'}),true)},'image/jpeg',.92);
+};
+$('camCancel').onclick=()=>{stopCam();$('camDialog').close()};
+$('camDialog').addEventListener('close',stopCam);
+for(const id of ['camBtn','camBtn2'])$(id).onclick=openCamera;
+for(const id of ['galBtn','galBtn2'])$(id).onclick=()=>$('file').click();
+// Directional wall reconstruction. Source pixels remain immutable.
+// Reconstruct closed, parallel wall boundaries. Never stretch the source image.
+function detectSolidWalls(p,w,h,threshold){
+ const n=w*h,ink=new Uint8Array(n),out=new Uint8Array(n);let colourful=0;
+ for(let i=0;i<n;i++){let k=i*4;if(Math.max(p[k],p[k+1],p[k+2])-Math.min(p[k],p[k+1],p[k+2])>35)colourful++;}
+ const colour=colourful/n>.025,cut=colour?Math.max(90,threshold):Math.min(240,threshold+95),minimum=Math.max(2,Math.round((+$('thick').value/9)*Math.max(3,Math.min(w,h)/260)));
+ const minRun=Math.max(18,Math.round(Math.min(w,h)*.025));
+ for(let i=0;i<n;i++){const k=i*4,r=p[k],g=p[k+1],b=p[k+2];ink[i]=p[k+3]>120&&Math.max(r,g,b)-Math.min(r,g,b)<28&&(r*.299+g*.587+b*.114)<cut?1:0;}
+ const rectangles=[];
+ for(const horizontal of [true,false]){
+  const length=horizontal?w:h,rows=horizontal?h:w,at=(x,y)=>horizontal?y*w+x:x*w+y,lines=new Uint8Array(n),bands=new Uint8Array(n);
+  for(let y=0;y<rows;y++){let start=-1,last=-1;for(let x=0;x<=length+1;x++){
+   if(x<length&&ink[at(x,y)]){if(start<0)start=x;last=x;}
+   else if(start>=0&&x-last>1){if(last-start+1>=minRun)for(let a=start;a<=last;a++)lines[at(a,y)]=1;start=-1;}
+  }}
+  // Four thin parallel strokes are window frames, not a solid partition.
+  if(!colour)for(let x=0;x<length;x++){
+   const runs=[];let start=-1;
+   for(let y=0;y<=rows;y++){if(y<rows&&lines[at(x,y)]){if(start<0)start=y;}else if(start>=0){runs.push([start,y-1]);start=-1;}}
+   for(let k=0;k+3<runs.length;k++){const a=runs[k],b=runs[k+1],c=runs[k+2],d=runs[k+3];if(d[1]-a[0]<=18&&[a,b,c,d].every(r=>r[1]-r[0]<=1))for(let y=a[0];y<=d[1];y++)lines[at(x,y)]=0;}
+  }
+  if(!colour&&$('fillHatch').checked)for(let x=0;x<length;x++)for(let y=1;y<rows-1;y++)if(lines[at(x,y-1)]&&lines[at(x,y+1)])lines[at(x,y)]=1;
+  for(let x=0;x<length;x++){let start=-1;for(let y=0;y<=rows;y++){
+   if(y<rows&&lines[at(x,y)]){if(start<0)start=y;}
+   else if(start>=0){if(y-start>=minimum)for(let a=start;a<y;a++)bands[at(x,a)]=1;start=-1;}
+  }}
+  // Remove narrow dimension tails attached to real walls and retain short jambs.
+  for(let y=0;y<rows;y++){let start=-1;for(let x=0;x<=length;x++){
+   if(x<length&&bands[at(x,y)]){if(start<0)start=x;}
+   else if(start>=0){if(x-start>=Math.max(8,minRun*.45))for(let a=start;a<x;a++)out[at(a,y)]=1;start=-1;}
+  }}
+ }
+ return {mask:out,rectangles};
+}
+
+function reconstructWalls(p,w,h,threshold){
+ const base=detectSolidWalls(p,w,h,Math.min(threshold,100)),rectangles=[],N=w*h,g=new Float32Array(N),ink=new Uint8Array(N);let coloured=0;
+ for(let i=0;i<N;i++){const k=i*4;g[i]=p[k]*.299+p[k+1]*.587+p[k+2]*.114;ink[i]=g[i]<threshold+55?1:0;if(Math.max(p[k],p[k+1],p[k+2])-Math.min(p[k],p[k+1],p[k+2])>35)coloured++;}
+ if(coloured/N>.025||!$('fillHatch').checked)return base;
+ const minLen=Math.max(26,Math.min(w,h)*.045),maxTh=Math.max(22,Math.min(w,h)*.075);
+ const stride=w+1,integral=new Float64Array((w+1)*(h+1));
+ for(let y=0;y<h;y++){let sum=0;for(let x=0;x<w;x++){sum+=g[y*w+x];integral[(y+1)*stride+x+1]=integral[y*stride+x+1]+sum;}}
+ const mean=(x0,y0,x1,y1)=>{x0=Math.max(0,Math.floor(x0));y0=Math.max(0,Math.floor(y0));x1=Math.min(w,Math.ceil(x1));y1=Math.min(h,Math.ceil(y1));return x1<=x0||y1<=y0?255:(integral[y1*stride+x1]-integral[y0*stride+x1]-integral[y1*stride+x0]+integral[y0*stride+x0])/((x1-x0)*(y1-y0));};
+ const allLines=[];
+ for(const horizontal of [true,false]){
+  const L=horizontal?w:h,R=horizontal?h:w,at=(u,v)=>horizontal?v*w+u:u*w+v,edge=new Uint8Array(N),lines=[];
+  for(let v=0;v<R;v++){let a=-1,last=-1;for(let u=0;u<=L+1;u++)if(u<L&&ink[at(u,v)]){if(a<0)a=u;last=u;}else if(a>=0&&u-last>1){if(last-a+1>=minLen)for(let j=a;j<=last;j++)edge[at(j,v)]=1;a=-1;}}
+  const seen=new Uint8Array(N),q=new Int32Array(N);
+  for(let i=0;i<N;i++)if(edge[i]&&!seen[i]){
+   let head=0,tail=1;q[0]=i;seen[i]=1;let u0=L,v0=R,u1=0,v1=0,count=0;
+   while(head<tail){let k=q[head++],x=k%w,y=Math.floor(k/w),u=horizontal?x:y,v=horizontal?y:x;u0=Math.min(u0,u);u1=Math.max(u1,u);v0=Math.min(v0,v);v1=Math.max(v1,v);count++;
+    for(const j of [x>0?k-1:-1,x<w-1?k+1:-1,y>0?k-w:-1,y<h-1?k+w:-1])if(j>=0&&edge[j]&&!seen[j]){seen[j]=1;q[tail++]=j;}}
+   if(v1-v0<=Math.max(5,Math.min(w,h)*.009)&&u1-u0>=minLen)lines.push({u0,u1,v0,v1,v:(v0+v1)/2});
+  }
+  allLines.push({horizontal,lines});
+  const avg=(a,b,c,d)=>horizontal?mean(a,b,c,d):mean(b,a,d,c);
+  for(const a of lines)for(const b of lines){
+   const th=b.v0-a.v1+1;if(th<2||th>maxTh)continue;
+   const u0=Math.max(a.u0,b.u0),u1=Math.min(a.u1,b.u1),len=u1-u0+1;if(len<minLen||len<th*1.15)continue;
+   const m=Math.min(len*.15,12),inside=avg(u0+m,a.v1+1,u1-m,b.v0),outside=Math.max(avg(u0+m,a.v0-5,u1-m,a.v0-1),avg(u0+m,b.v1+2,u1-m,b.v1+6));
+   // Reject window frames with an extra parallel line inside or immediately beside the pair.
+   const middle=lines.some(c=>c!==a&&c!==b&&c.v>a.v&&c.v<b.v&&Math.min(c.u1,u1)-Math.max(c.u0,u0)>len*.6);
+   if(middle)continue;
+   const nearParallel=lines.some(c=>c!==a&&c!==b&&c.v>a.v-6&&c.v<b.v+6&&Math.min(c.u1,u1)-Math.max(c.u0,u0)>len*.6);
+   if(th<=8&&nearParallel)continue;
+   const tiny=th<=6&&!nearParallel;
+   let coverage=0,total=0;
+   for(let u=Math.ceil(u0+m);u<=Math.floor(u1-m);u+=2)for(let v=a.v1+1;v<b.v0;v+=2){total++;if(g[at(u,v)]<outside-12)coverage++;}
+   if(!(inside<outside-8&&inside<239&&coverage/Math.max(1,total)>.35)&&!tiny)continue;
+   const accepted=new Uint8Array(len);
+   for(let u=u0;u<=u1;u++){
+    const innerLine=lines.some(c=>c!==a&&c!==b&&c.v>a.v&&c.v<b.v&&u>=c.u0&&u<=c.u1);
+    if(innerLine)continue;
+    const localInside=avg(u-4,a.v1+1,u+5,b.v0),localOutside=Math.max(avg(u-4,a.v0-5,u+5,a.v0-1),avg(u-4,b.v1+2,u+5,b.v1+6));
+    accepted[u-u0]=tiny||localInside<localOutside-7?1:0;
+   }
+   for(let u=1;u<len-1;u++)if(accepted[u-1]&&accepted[u+1])accepted[u]=1;
+   let start=-1;
+   for(let u=0;u<=len;u++)if(u<len&&accepted[u]){if(start<0)start=u;}else if(start>=0){
+    if(u-start>=Math.max(6,Math.min(12,th*.65)))rectangles.push(horizontal?{x1:u0+start,y1:a.v0,x2:u0+u-1,y2:b.v1,axis:'h'}:{x1:a.v0,y1:u0+start,x2:b.v1,y2:u0+u-1,axis:'v'});start=-1;
+   }
+  }
+ }
+ // Clear long multi-line window frames from the solid-mask proposal as well.
+ for(const {horizontal,lines} of allLines)for(const a of lines)for(const b of lines)for(const c of lines){
+  if(!(a.v<b.v&&b.v<c.v&&c.v-a.v<=12&&[a,b,c].every(q=>q.v1-q.v0<=2)))continue;
+  const lo=Math.max(a.u0,b.u0,c.u0),hi=Math.min(a.u1,b.u1,c.u1);if(hi-lo<minLen)continue;
+  for(let u=lo+1;u<hi;u++)for(let v=a.v0;v<=c.v1;v++){let x=horizontal?u:v,y=horizontal?v:u;base.mask[y*w+x]=0;}
+ }
+ // Complete only geometric L/T intersections of two supported wall bands.
+ for(const a of rectangles)for(const b of rectangles)if(a.axis==='h'&&b.axis==='v'){
+  if(a.x1<=b.x2+7&&a.x2>=b.x1-7&&a.y1<=b.y2+7&&a.y2>=b.y1-7){
+   if(a.x1>=b.x1&&a.x1<=b.x2+7)a.x1=b.x1;
+   if(a.x2<=b.x2&&a.x2>=b.x1-7)a.x2=b.x2;
+   if(b.y1>=a.y1&&b.y1<=a.y2+7)b.y1=a.y1;
+   if(b.y2<=a.y2&&b.y2>=a.y1-7)b.y2=a.y2;
+  }
+ }
+ for(const r of rectangles)for(let y=r.y1;y<=r.y2;y++)for(let x=r.x1;x<=r.x2;x++)base.mask[y*w+x]=1;
+ return {mask:base.mask,rectangles,allLines};
+}
+
+function analyze(){if(rooms.length)previousLayout=rooms;rooms=[];roomMap=null;roomOverlay=null;roomValid=false;$('roomList').style.display='none';$('skirtingList').style.display='none';renderFinal();if(!img)return;
+const off=document.createElement('canvas');off.width=W;off.height=H;const c=off.getContext('2d',{willReadFrequently:true});c.fillStyle='white';c.fillRect(0,0,W,H);c.drawImage(img,0,0,W,H);
+const N=W*H,t=+$('thick').value,result=reconstructWalls(c.getImageData(0,0,W,H).data,W,H,+$('dark').value);let grown=result.mask;wallBase=grown.slice();hatchFilled=null;
+// Connected component labels for review.
+labels=new Int32Array(N);labels.fill(-1);parts=[];let q=new Int32Array(N);for(let i=0;i<N;i++){if(!grown[i]||labels[i]>=0)continue;let id=parts.length,front=0,end=1;q[0]=i;labels[i]=id;let count=0,minx=W,miny=H,maxx=0,maxy=0;while(front<end){let v=q[front++],x=v%W,y=(v/W)|0;count++;minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);for(let n of [x>0?v-1:-1,x<W-1?v+1:-1,y>0?v-W:-1,y<H-1?v+W:-1])if(n>=0&&grown[n]&&labels[n]<0){labels[n]=id;q[end++]=n}}parts.push({count,minx,miny,maxx,maxy})}
+mask=grown;applyWallEdits();hidden.clear();selected=-1;selection=null;calibration=null;measuringWall=false;manualMeasureStart=null;updateMeasureButton();openings=[];windowsAuto=[];manualWindowStart=null;setMode('compare');let valid=parts.filter(a=>a.count>=t*t).length;$('status').textContent=`Stěny připraveny. Zkontroluj je proti originálu, označ známou délku a doplň okna a dveře. Rozpoznání je návrh, zejména u šikmých fotografií.`}
+function updateOpeningCounter(){
+ const counter=$('openingCounter');if(!counter)return;
+ counter.style.display=mode==='orig'&&!summaryActive?'flex':'none';
+ $('doorCount').textContent=openings.filter(o=>o.type==='door').length;
+ $('windowCount').textContent=openings.filter(o=>o.type==='window').length;
+}
+function render(){document.body.classList.toggle('has-plan',!!img);updateOpeningCounter();requestAnimationFrame(updatePlanTransform);if(mode==='finalTab'){$('roomList').style.display='none';return;}if(!img){canvas.width=1;canvas.height=1;ctx.clearRect(0,0,1,1);return;}canvas.width=W;canvas.height=H;if(mode==='roomsTab'||materialTabs.includes(mode)||workTabs.includes(mode)){if(rooms.length){drawRooms();if(completionTabs.includes(mode))drawWorkExcluded();drawRoomStatusMarks();}else{ctx.drawImage(img,0,0,W,H);drawOpenings()}return;}if(mode==='skirtingTab'){drawSkirting();drawRoomStatusMarks();return;}if(mode==='orig'){ctx.drawImage(img,0,0,W,H);drawOpenings();drawSelection();return}let out=ctx.createImageData(W,H),d=out.data;if(false){}else{for(let i=0;i<W*H;i++){let k=i*4;d[k]=250;d[k+1]=252;d[k+2]=254;d[k+3]=255}}if(mask)for(let i=0;i<W*H;i++){let id=labels[i];if(id<0||hidden.has(id))continue;let k=i*4;if(false){d[k]=Math.round(d[k]*.35+0*.65);d[k+1]=Math.round(d[k+1]*.35+165*.65);d[k+2]=Math.round(d[k+2]*.35+210*.65)}else{d[k]=id===selected?244:28;d[k+1]=id===selected?132:67;d[k+2]=id===selected?45:87}}ctx.putImageData(out,0,0);drawOpenings();drawSelection()}
+function drawOpenings(){
+ ctx.save();ctx.lineWidth=3;ctx.setLineDash([7,4]);
+ for(let o of openings){if(o.type==='ignore')continue;ctx.strokeStyle=o.type==='window'?'#1687de':o.type==='door'?'#e53935':'#888';ctx.beginPath();ctx.moveTo(o.x1,o.y1);ctx.lineTo(o.x2,o.y2);ctx.stroke()}
+ ctx.restore();
+}
+function numberValue(id){const v=$(id).value.trim().replace(/\s/g,'').replace(',','.');return v?Number(v):NaN}
+function resetRoomResults(){if(rooms.length)previousLayout=rooms;rooms=[];roomMap=null;roomOverlay=null;roomValid=false;$('roomList').style.display='none';$('skirtingList').style.display='none';renderFinal()}
+$('openingTool').onchange=()=>{if($('openingTool').value!=='none')$('toolsPanel').open=false;manualWindowStart=null;$('status').textContent=$('openingTool').value==='none'?'Režim výběru stěn.':'Klikni doprostřed mezery. Pokud se nepodaří přichycení, klikni na oba konce.';};
+$('clearOpenings').onclick=()=>{openings=[];manualWindowStart=null;resetRoomResults();render();$('status').textContent='Všechny ručně zadané otvory byly smazány.'};
+$('undoOpening').onclick=()=>{if(manualWindowStart){manualWindowStart=null;$('status').textContent='První bod zrušen.'}else if(openings.length){openings.pop();resetRoomResults();render();$('status').textContent='Poslední otvor odstraněn.'}};
+function drawSelection(){if(wallStart){ctx.save();ctx.fillStyle='#e87912';ctx.beginPath();ctx.arc(wallStart.x,wallStart.y,5,0,Math.PI*2);ctx.fill();ctx.restore()}
+ if(manualMeasureStart&&measuringWall){ctx.save();ctx.fillStyle='#ff8a00';ctx.strokeStyle='#fff';ctx.lineWidth=2;ctx.beginPath();ctx.arc(manualMeasureStart.x,manualMeasureStart.y,7,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.restore()}
+ if(!selection)return;
+ ctx.save();ctx.strokeStyle='#ff8a00';ctx.lineWidth=3;ctx.lineCap='round';
+ ctx.beginPath();ctx.moveTo(selection.x1,selection.y1);ctx.lineTo(selection.x2,selection.y2);ctx.stroke();
+ for(const [x,y] of [[selection.x1,selection.y1],[selection.x2,selection.y2]]){ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);ctx.fillStyle='#ff8a00';ctx.fill()}
+ ctx.restore();
+}
+function hitRadius(){return Math.min(45,Math.max(5,Math.round(16*W/Math.max(1,canvas.getBoundingClientRect().width))))}
+function chooseSegment(x,y){
+ if(!mask)return null;
+ let px=-1,py=-1,best=Infinity,r=hitRadius();
+ for(let yy=Math.max(0,y-r);yy<=Math.min(H-1,y+r);yy++)for(let xx=Math.max(0,x-r);xx<=Math.min(W-1,x+r);xx++){const i=yy*W+xx,d=(xx-x)**2+(yy-y)**2;if(mask[i]&&labels[i]>=0&&!hidden.has(labels[i])&&d<best){px=xx;py=yy;best=d;}}
+ if(px<0)return null;
+ const on=(a,b)=>a>=0&&b>=0&&a<W&&b<H&&mask[b*W+a]&&!hidden.has(labels[b*W+a]);
+ const support=(dx,dy)=>{let n=0;for(let k=-28;k<=28;k++)if(on(px+dx*k,py+dy*k))n++;return n;};
+ const horizontal=support(1,0)>=support(0,1),center=horizontal?px:py,limit=horizontal?W:H;
+ let crossCenter=horizontal?py:px;
+ const exists=(u,v)=>horizontal?on(u,v):on(v,u);
+ // Estimate a normal cross-section away from a junction, not the whole connected wall.
+ const sections=[];
+ for(const offset of [-24,-12,0,12,24]){const u=center+offset;if(!exists(u,crossCenter))continue;let lo=crossCenter,hi=crossCenter;while(lo>0&&exists(u,lo-1)&&crossCenter-lo<70)lo--;while(exists(u,hi+1)&&hi-crossCenter<70)hi++;sections.push({lo,hi,width:hi-lo+1});}
+ sections.sort((a,b)=>a.width-b.width);const normal=sections[Math.floor(sections.length*.25)];if(!normal)return null;
+ crossCenter=Math.round((normal.lo+normal.hi)/2);const typical=normal.width;
+ let a=center,b=center;
+ while(a>0&&exists(a-1,crossCenter))a--;while(b<limit-1&&exists(b+1,crossCenter))b++;
+ const branches=[];let start=-1;
+ for(let u=a;u<=b+1;u++){
+  let isBranch=false;
+  if(u<=b){let lo=crossCenter,hi=crossCenter;while(lo>0&&exists(u,lo-1)&&crossCenter-lo<90)lo--;while(exists(u,hi+1)&&hi-crossCenter<90)hi++;isBranch=hi-lo+1>typical+Math.max(5,typical*.65);}
+  if(isBranch){if(start<0)start=u;}else if(start>=0){if(u-start>=2)branches.push({start,end:u-1});start=-1;}
+ }
+ for(const j of branches){if(j.end<center-3)a=Math.max(a,j.end);else if(j.start>center+3){b=Math.min(b,j.start);break;}}
+ if(b-a<6)return null;
+ return horizontal?{x1:a,y1:crossCenter,x2:b,y2:crossCenter,pixels:b-a-1,axis:'vodorovná – mezi vnitřními líci'}:{x1:crossCenter,y1:a,x2:crossCenter,y2:b,pixels:b-a-1,axis:'svislá – mezi vnitřními líci'};
+}
+
+// Snap to two opposite wall ends. No automatic room-wide window discovery.
+function nearestOpening(x,y){
+ const solid=(xx,yy)=>xx>=0&&yy>=0&&xx<W&&yy<H&&mask[yy*W+xx]&&labels[yy*W+xx]>=0&&!hidden.has(labels[yy*W+xx]);
+ let candidates=[];
+ for(const horizontal of [true,false]){
+  for(let offset=-18;offset<=18;offset+=3){
+   const cx=horizontal?x:y, cy=horizontal?y+offset:x+offset;
+   if(cx<0||cy<0||(horizontal?cy>=H:cy>=W))continue;
+   const at=d=>horizontal?solid(cx+d,cy):solid(cy,cx+d);
+   if(at(0))continue;
+   let left=0,right=0;
+   for(let d=1;d<=170;d++){if(at(-d)){left=d;break}}
+   for(let d=1;d<=170;d++){if(at(d)){right=d;break}}
+   if(!left||!right||left+right<9||left+right>300)continue;
+   // Require a solid run outside each end, not isolated noise or a dimension mark.
+   const thickSide=(sign,dist)=>{let hits=0;for(let i=1;i<=13;i++)if(at(sign*(dist+i)))hits++;return hits};
+   const gap=left+right;
+   if(calibration && gap*(horizontal?scaleX():scaleY()) >
+      ($('openingTool').value==='door'?numberValue('doorWidth')/100*1.5:3))continue;
+   // An opening has a wall continuing along its axis at each jamb.
+   const probe=Math.max(15,Math.min(45,Math.round(gap*.4)));
+   if(!at(-left-probe)||!at(right+probe))continue;
+   const crosses=(u)=>[-probe,probe].every(d=>horizontal?solid(cx+u,cy+d):solid(cy+d,cx+u));
+   if(crosses(-left-1)&&crosses(right+1))continue;
+   if(thickSide(-1,left)<8||thickSide(1,right)<8)continue;
+   // Check the opening itself is mostly empty, including its immediate parallel neighbors.
+   let blocked=0;for(let d=-left+2;d<right-1;d+=3){
+    for(let o=-2;o<=2;o+=2){const xx=horizontal?cx+d:cy+o, yy=horizontal?cy+o:cx+d;if(solid(xx,yy))blocked++}
+   }
+   if(blocked>Math.max(2,(left+right)/18))continue;
+   const imbalance=Math.abs(left-right),score=(left+right)*.13+imbalance*.15+Math.abs(offset)*.9;
+   const line=horizontal?{x1:cx-left,y1:cy,x2:cx+right,y2:cy}:{x1:cy,y1:cx-left,x2:cy,y2:cx+right};
+   candidates.push({score,line});
+  }
+ }
+ candidates.sort((a,b)=>a.score-b.score);
+ return candidates.length?candidates[0].line:null;
+}
+function snapPoint(x,y){
+ let best=null,dist=16;
+ for(let yy=Math.max(0,y-16);yy<=Math.min(H-1,y+16);yy++)for(let xx=Math.max(0,x-16);xx<=Math.min(W-1,x+16);xx++){
+  if(!mask[yy*W+xx])continue;
+  const d=Math.hypot(xx-x,yy-y);if(d<dist){dist=d;best={x:xx,y:yy}}
+ }
+ return best||{x,y};
+}
+canvas.onclick=e=>{if(suppressClick)return;
+  if(!img)return;
+ const r=canvas.getBoundingClientRect(),x=Math.max(0,Math.min(W-1,Math.floor((e.clientX-r.left)*canvas.width/r.width))),y=Math.max(0,Math.min(H-1,Math.floor((e.clientY-r.top)*canvas.height/r.height)));
+ if(mode==='roomsTab'||materialTabs.includes(mode)||mode==='skirtingTab'||completionTabs.includes(mode)){
+  const id=roomMap && roomMap[y*W+x];
+  const room=rooms.find(r=>r.id===id);
+  if(room){if(completionTabs.includes(mode))openWorkRoomEditor(room);else if(mode==='skirtingTab')openSkirtingEditor(room);else openRoomEditor(room)}else{$('status').textContent='Klikni dovnitř barevně označené místnosti.'}
+  return;
+ }
+ if(spanAxis){selectInteriorSpan(x,y);return;}
+ if(wallEditTool!=='none'){editWallAt(x,y);return;}
+ if(measuringWall){
+  if(!manualMeasureStart){const segment=chooseSegment(x,y);if(segment&&segment.pixels>8){selection=segment;measuringWall=false;updateMeasureButton();render();$('toolsPanel').open=true;$('length').focus();$('status').textContent='Stěna vybrána. Zadej skutečnou délku vyznačeného úseku.';return;}manualMeasureStart={x,y};render();$('status').textContent='Začátek označen oranžovým bodem. Klikni na KONEC známé délky (např. konce kóty 6,00 m).';return;}
+  const a=manualMeasureStart;const pixels=Math.hypot(x-a.x,y-a.y);
+  if(pixels<8){$('status').textContent='Body jsou příliš blízko. Klikni na vzdálenější konec úseku.';return;}
+  selection={x1:a.x,y1:a.y,x2:x,y2:y,pixels,axis:'ručně měřená'};
+  manualMeasureStart=null;measuringWall=false;updateMeasureButton();render();
+  $('status').textContent='Ruční úsek označen oranžovou čarou ('+Math.round(pixels)+' px). Zadej jeho skutečnou délku a klikni na Uložit délku.';return;
+ }
+ const tool=$('openingTool').value;
+ if(tool!=='none'){
+  // Clicking an existing bridge removes it even with the drawing tool selected.
+  const old=openings.find(o=>{let dx=o.x2-o.x1,dy=o.y2-o.y1,den=dx*dx+dy*dy,t=den?Math.max(0,Math.min(1,((x-o.x1)*dx+(y-o.y1)*dy)/den)):0;return Math.hypot(x-o.x1-t*dx,y-o.y1-t*dy)<7});
+  if(old){openings.splice(openings.indexOf(old),1);resetRoomResults();render();$('status').textContent='Spojnice odstraněna.';return}
+  if(!manualWindowStart){
+   const line=nearestOpening(x,y);
+   if(line){openings.push({...line,type:tool,source:'snap'});resetRoomResults();render();$('status').textContent=(tool==='window'?'Okno':'Dveře')+' přichyceny ke koncům stěn jedním kliknutím. Pokud je spojení chybné, klikni na něj a smaž ho.';return}
+   const start=snapPoint(x,y);
+   if(!mask[start.y*W+start.x]){$('status').textContent='Otvor zde nebyl rozpoznán. Klikni přímo na konec první stěny.';return}
+   manualWindowStart=start;$('status').textContent='Automatické přichycení zde nenašlo vhodné konce. Klikni na druhý konec otvoru (první se přichytil ke stěně).';
+  }else{
+   const p=manualWindowStart,q=snapPoint(x,y);
+   if(!mask[q.y*W+q.x]){$('status').textContent='Klikni na protější konec stěny.';return}
+   if(Math.hypot(q.x-p.x,q.y-p.y)>4){openings.push({x1:p.x,y1:p.y,x2:q.x,y2:q.y,type:tool,source:'manual'});resetRoomResults();$('status').textContent='Otvor vložen mezi přichycené body.'}
+   manualWindowStart=null;render();
+  }
+  return;
+ }
+ const chosen=openings.find(o=>{let vx=o.x2-o.x1,vy=o.y2-o.y1,den=vx*vx+vy*vy,t=den?Math.max(0,Math.min(1,((x-o.x1)*vx+(y-o.y1)*vy)/den)):0;return Math.hypot(x-o.x1-t*vx,y-o.y1-t*vy)<9});
+ if(chosen){openings.splice(openings.indexOf(chosen),1);resetRoomResults();render();$('status').textContent='Spojnice odstraněna.';return}
+ selection=chooseSegment(x,y);if(!selection){$('status').textContent='Na tomto místě nebyla rozpoznána stěna. Zkus jiné místo nebo uprav filtr.';return}
+ measuringWall=false;updateMeasureButton();render();$('status').textContent=`Vybraná ${selection.axis} stěna, délka v obrázku ${selection.pixels} px. Zadej skutečnou délku v metrech nebo centimetrech.`;
+};
+$('saveLength').onclick=()=>{
+ if(!selection){$('status').textContent='Nejdřív klikni na stěnu.';return}
+ const raw=$('length').value.trim().replace(/\s/g,'').replace(',','.');const n=Number(raw);
+ if(!Number.isFinite(n)||n<=0||!raw){$('status').textContent='Zadej kladnou délku, například 4,25.';return}
+ const meters=n*($('unit').value==='cm'?.01:1);
+ if(selection.pixels<=0){$('status').textContent='Vybraný úsek je příliš krátký.';return}
+ const ratio=meters/selection.pixels,dx=Math.abs(selection.x2-selection.x1),dy=Math.abs(selection.y2-selection.y1);
+ const previous=calibration||{};
+ if(previous.pixels&&!previous.sx&&!previous.sy){const oldRatio=previous.meters/previous.pixels;previous.sx=oldRatio;previous.sy=oldRatio;}
+ calibration={...previous,meters,pixels:selection.pixels};
+ if(dx>dy*4)calibration.sx=ratio;else if(dy>dx*4)calibration.sy=ratio;else{calibration.sx=ratio;calibration.sy=ratio;}
+ $('toolsPanel').open=false;updateMeasureButton();if(rooms.length){for(const r of rooms)r.area=r.count*scaleX()*scaleY();calculateSkirting();render();renderFinal();}
+ $('status').textContent=calibration.sx&&calibration.sy?'Měřítko uloženo v obou směrech. Rozměry odpovídají zadaným kótám.':'Měřítko uloženo: '+meters.toLocaleString('cs-CZ')+' m. U fotografie doplň ještě kolmý rozměr pomocí tlačítka Rozměr ↔ / ↕.';
+};
+
+
+
+function applyWallEdits(){
+ if(!wallBase)return;mask=wallBase.slice();
+ for(const e of wallEdits)for(let y=Math.max(0,e.y1);y<=Math.min(H-1,e.y2);y++)for(let x=Math.max(0,e.x1);x<=Math.min(W-1,e.x2);x++)mask[y*W+x]=e.value;
+ if(labels)for(let i=0;i<mask.length;i++){if(!mask[i])labels[i]=-1;else if(labels[i]<0)labels[i]=0;}
+}
+for(const [id,tool] of [['editAdd','add'],['editErase','erase']])$(id).onclick=()=>{if(!img)return;spanAxis=null;wallEditTool=tool;wallStart=null;measuringWall=false;$('openingTool').value='none';setMode('compare');$('status').textContent=tool==='add'?'Doplnění: klikni na oba konce stěny. Směr se automaticky srovná. Zpět vrací poslední opravu.':'Odebrání: klikni na chybný rovný úsek. Zpět vrací poslední opravu.';};
+function editWallAt(x,y){
+ if(wallEditTool==='add'){
+  if(!wallStart){wallStart=snapPoint(x,y);$('status').textContent='Teď klikni na druhý konec stěny.';render();return;}
+  const a=wallStart,b=snapPoint(x,y),horizontal=Math.abs(b.x-a.x)>=Math.abs(b.y-a.y),r=Math.max(2,Math.round(Math.min(W,H)/200));
+  wallEdits.push(horizontal?{x1:Math.min(a.x,b.x),x2:Math.max(a.x,b.x),y1:a.y-r,y2:a.y+r,value:1}:{x1:a.x-r,x2:a.x+r,y1:Math.min(a.y,b.y),y2:Math.max(a.y,b.y),value:1});wallStart=null;
+ }else{
+  const seg=chooseSegment(x,y);if(!seg){$('status').textContent='Klikni na úsek stěny, který chceš odebrat.';return;}
+  const horizontal=seg.y1===seg.y2,mid=Math.round(horizontal?(seg.x1+seg.x2)/2:(seg.y1+seg.y2)/2),center=horizontal?seg.y1:seg.x1;
+  const on=t=>{const xx=horizontal?mid:t,yy=horizontal?t:mid;return xx>=0&&yy>=0&&xx<W&&yy<H&&mask[yy*W+xx]};
+  let lo=center,hi=center;while(on(lo-1))lo--;while(on(hi+1))hi++;
+  wallEdits.push(horizontal?{x1:seg.x1,x2:seg.x2,y1:lo,y2:hi,value:0}:{x1:lo,x2:hi,y1:seg.y1,y2:seg.y2,value:0});
+ }
+ applyWallEdits();resetRoomResults();render();$('status').textContent='Úprava stěny uložena. Tlačítko Zpět ji vrátí; Výběr ukončí opravy.';
+}
+
+function scaleX(){return calibration?.sx||calibration?.sy||(calibration?calibration.meters/calibration.pixels:1)}
+function scaleY(){return calibration?.sy||calibration?.sx||(calibration?calibration.meters/calibration.pixels:1)}
+for(const [id,axis] of [['spanH','x'],['spanV','y']])$(id).onclick=()=>{if(!img)return;spanAxis=axis;wallEditTool='none';wallStart=null;measuringWall=false;manualMeasureStart=null;$('openingTool').value='none';$('toolsPanel').open=false;setMode('orig');$('status').textContent=axis==='x'?'Vodorovný rozměr: klepni dovnitř místnosti na kótu. Vybere se rozpon mezi stěnami.':'Svislý rozměr: klepni dovnitř místnosti na kótu. Vybere se rozpon mezi stěnami.';};
+function selectInteriorSpan(x,y){
+ const horizontal=spanAxis==='x',u=horizontal?x:y,v=horizontal?y:x,L=horizontal?W:H;
+ const solid=t=>{const xx=horizontal?t:v,yy=horizontal?v:t,i=yy*W+xx;return t>=0&&t<L&&mask[i]&&!hidden.has(labels[i]);};
+ if(solid(u)){$('status').textContent='Klepni do volného prostoru mezi stěnami, ne na stěnu.';return;}
+ let a=u,b=u;while(a>0&&!solid(a))a--;while(b<L-1&&!solid(b))b++;
+ if(!solid(a)||!solid(b)||b-a<10){$('status').textContent='Na obou stranách nejsou uzavřené stěny. Zkus kótu mimo okno nebo dveře.';return;}
+ selection=horizontal?{x1:a,y1:y,x2:b,y2:y,pixels:b-a-1,axis:'vodorovný vnitřní rozměr'}:{x1:x,y1:a,x2:x,y2:b,pixels:b-a-1,axis:'svislý vnitřní rozměr'};
+ spanAxis=null;updateMeasureButton();render();$('toolsPanel').open=true;$('length').value='';$('length').focus();$('status').textContent='Rozpon označen. Zadej hodnotu příslušné kóty a ulož délku.';
+}
+
+function reanalyzePlan(){const cal=calibration,ops=openings.slice();analyze();calibration=cal;openings=ops;updateMeasureButton();render();}
+$('measureDone').onclick=()=>{
+ if(!calibration||!rooms.length||!roomValid){$('status').textContent='Nejdřív nastav měřítko a vypočítej místnosti.';return;}
+ measuringWall=false;manualMeasureStart=null;spanAxis=null;wallEditTool='none';wallStart=null;manualWindowStart=null;$('openingTool').value='none';selection=null;
+ $('toolsPanel').open=false;document.body.classList.add('measure-tools-hidden');
+ setMode(activeView==='work'?'workSand':'roomsTab');updateMeasureButton();fitPlan();render();
+};
+$('toolsPanel').querySelector('summary').addEventListener('click',()=>{document.body.classList.remove('measure-tools-hidden');requestAnimationFrame(()=>{fitPlan();render()});});
+$('quickMeasure').onclick=()=>{$('toolsPanel').open=true;$('measureWall').click()};
+for(const [id,value] of [['quickWindow','window'],['quickDoor','door'],['quickSelect','none']])$(id).onclick=()=>{if(!img)return;spanAxis=null;wallEditTool='none';wallStart=null;measuringWall=false;manualMeasureStart=null;$('openingTool').value=value;$('openingTool').onchange();setMode('compare');for(const k of ['quickWindow','quickDoor','quickSelect'])$(k).classList.toggle('chosen',k===id)};
+$('quickUndo').onclick=()=>{if(wallEditTool!=='none'){if(wallStart){wallStart=null;render();return;}wallEdits.pop();applyWallEdits();resetRoomResults();render();}else $('undoOpening').click()};
+$('quickCalc').onclick=()=>$('roomsCalc').click();
+
+// Room detection is based on wall geometry only, never on dimension marks from original image.
+function drawRooms(){
+ drawRoomsBase();
+ // Openings already drawn by drawRoomsBase().
+ if(rooms.length){
+  ctx.save();ctx.textAlign='center';ctx.textBaseline='middle';
+  for(const r of rooms){
+   const area=r.area.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' m²';
+   ctx.font='bold 14px system-ui';ctx.lineWidth=4;ctx.strokeStyle='white';
+   ctx.strokeText(r.name,r.cx,r.cy-10);ctx.strokeText(area,r.cx,r.cy+10);if(visibleRoomNote(r)){ctx.font='12px system-ui';ctx.strokeText(visibleRoomNote(r),r.cx,r.cy+30)}
+   ctx.fillStyle='#173448';ctx.fillText(r.name,r.cx,r.cy-10);ctx.fillText(area,r.cx,r.cy+10);if(visibleRoomNote(r)){ctx.font='12px system-ui';ctx.fillText(visibleRoomNote(r),r.cx,r.cy+30)}
+  }
+  ctx.restore();
+ }
+}
+function workIsEnabled(tab,id){return !(workExcluded[tab]||[]).includes(id)}
+function workArea(tab){return rooms.reduce((sum,r)=>sum+(workIsEnabled(tab,r.id)?r.area||0:0),0)}
+function workRoomMax(tab,room){return tab==='workSilicone'?Infinity:tab==='workSkirting'?Math.max(0,Number(room.skirting)||0):Math.max(0,Number(room.area)||0)}
+function workDoneValue(tab,room){if(!workIsEnabled(tab,room.id))return 0;const v=(workDone[tab]||{})[room.id];return v==='all'?workRoomMax(tab,room):v===undefined?0:Math.min(workRoomMax(tab,room),Math.max(0,Number(v)||0))}
+function workDoneTotal(tab){return rooms.reduce((sum,r)=>sum+workDoneValue(tab,r),0)}
+function workDoneSave(value,whole=false){if(!editedWorkRoom)return;const tab=mode,r=editedWorkRoom,max=workRoomMax(tab,r);if(!workIsEnabled(tab,r.id)){alert('Nejdřív zapni práci v této místnosti.');return}if(!Number.isFinite(value)||value<0||(tab!=='workSilicone'&&value>max+0.00001)){alert(tab==='workSilicone'?'Zadej platný počet běžných metrů (0 nebo více).':'Zadej množství od 0 do '+max.toLocaleString('cs-CZ',{maximumFractionDigits:2})+'.');return}const data=workDone[tab]||(workDone[tab]={});data[r.id]=whole?'all':value;refreshWorkCompletion();render();renderWork();renderFinal();}
+function refreshWorkCompletion(){if(!editedWorkRoom)return;const r=editedWorkRoom,tab=mode,max=workRoomMax(tab,r),unit=(tab==='workSkirting'||tab==='workSilicone')?'bm':'m²',value=workDoneValue(tab,r),has=Object.hasOwn(workDone[tab]||{},r.id);if(tab==='workSilicone'){$('workCompletionHint').textContent='Zadej skutečně provedené běžné metry.';$('workDoneUnit').textContent='bm';$('workDoneState').textContent=has?'Zadáno: '+value.toLocaleString('cs-CZ',{maximumFractionDigits:2})+' bm':'';$('workDonePartial').disabled=false;$('workDonePartial').value=has?String(value).replace('.',','):'';return;}$('workDoneUnit').textContent=unit;$('workCompletionHint').textContent='Celkem v místnosti: '+max.toLocaleString('cs-CZ',{maximumFractionDigits:2})+' '+unit;$('workDoneState').textContent=!workIsEnabled(tab,r.id)?'Práce je vypnutá':!has?'Zatím neoznačeno jako hotové':value>=max-0.00001?'✓ Hotová celá místnost':'✓ Hotovo '+value.toLocaleString('cs-CZ',{maximumFractionDigits:2})+' z '+max.toLocaleString('cs-CZ',{maximumFractionDigits:2})+' '+unit;$('workDonePartial').disabled=!workIsEnabled(tab,r.id);$('workDoneAll').disabled=!workIsEnabled(tab,r.id);$('workDonePartial').value=has?String(value).replace('.',','):'';}
+$('workDoneAll').onclick=()=>{if(editedWorkRoom&&workIsEnabled(mode,editedWorkRoom.id)){if(mode==='workScreed'){const passes=Number($('screedWorkFactor').value);if(!Number.isInteger(passes)||passes<1){alert('Zadej platný počet úkonů.');return} screedRoomFactors.work[editedWorkRoom.id]=passes;}
+ workDoneSave(workRoomMax(mode,editedWorkRoom),true);$('workRoomDialog').close();}};
+$('workDonePartial').onchange=()=>{if(mode==='workSilicone')return;const raw=$('workDonePartial').value.trim();if(!raw){$('workDoneClear').click();return}workDoneSave(Number(raw.replace(/\s/g,'').replace(',','.')))};
+$('workDoneClear').onclick=()=>{if(!editedWorkRoom)return;delete (workDone[mode]||{})[editedWorkRoom.id];refreshWorkCompletion();render();renderWork();renderFinal()};
+// Značky jsou nezávislé pro každou záložku: popis ≠ dokončená práce.
+function drawRoomStatusMarks(){
+ if(!rooms.length)return;
+ const isWork=workTabs.includes(mode),isSkirting=mode==='skirtingTab';
+ ctx.save();ctx.textAlign='center';ctx.textBaseline='middle';
+ for(const r of rooms){
+  let described=false,finished=false,partial=false,excluded=false;
+  if(isWork){
+   excluded=!workIsEnabled(mode,r.id);
+   described=!!String((workNotes[mode]||{})[r.id]||'').trim();
+   if(completionTabs.includes(mode)&&!excluded){
+    const amount=workDoneValue(mode,r),max=workRoomMax(mode,r);
+    finished=amount>0&&max>0&&amount>=max-0.00001;
+    partial=amount>0&&!finished;
+   }
+  }else{
+   excluded=!roomIsEnabled(mode,r.id);
+   described=!!String(isSkirting?(skirtingNotes[r.id]||''):visibleRoomNote(r)).trim();
+   if(!excluded&&materialTabs.includes(mode)){
+    const amount=coveredArea(mode,r);
+    if(Number.isFinite(amount)&&amount>0){finished=true;}
+   }
+  }
+  if(!described&&!finished&&!partial&&!excluded)continue;
+  const x=r.cx+32,y=r.cy-32;
+  ctx.beginPath();ctx.arc(x,y,17,0,Math.PI*2);
+  ctx.fillStyle=excluded?'rgba(110,115,125,.95)':finished||partial?'rgba(20,140,76,.94)':'rgba(24,114,184,.92)';ctx.fill();
+  ctx.lineWidth=2;ctx.strokeStyle='white';ctx.stroke();
+  ctx.font='bold 19px system-ui';ctx.fillStyle='white';ctx.fillText(excluded?'×':finished||partial?'✓':'✎',x,y+1);
+ }
+ ctx.restore();
+}
+function drawWorkExcluded(){
+ ctx.save();ctx.textAlign='center';ctx.textBaseline='middle';
+ for(const r of rooms){if(workIsEnabled(mode,r.id))continue;
+  ctx.fillStyle='rgba(100,105,112,.78)';ctx.beginPath();ctx.arc(r.cx,r.cy,28,0,Math.PI*2);ctx.fill();
+  ctx.font='bold 28px system-ui';ctx.fillStyle='white';ctx.fillText('×',r.cx,r.cy);
+ }ctx.restore();
+}
+function openWorkRoomEditor(room){
+ editedWorkRoom=room;$('workRoomTitle').textContent=workLabels[mode]+' – '+room.name;
+ if(mode==='workSilicone'){$('workRoomArea').textContent='Zadej počet provedených běžných metrů.';$('workRoomNote').parentElement.style.display='none';$('workDoneAll').style.display='none';$('workDoneClear').style.display='none';$('workRoomToggle').style.display='none';$('workRoomState').style.display='none';$('workDonePartial').placeholder='např. 12,5';$('workRoomClose').textContent='Uložit';}else{$('workRoomNote').parentElement.style.display='';$('workDoneAll').style.display='';$('workDoneClear').style.display='';$('workRoomToggle').style.display='';$('workRoomState').style.display='';$('workDonePartial').placeholder='např. 12,5';$('workRoomClose').textContent='Hotovo';}
+ $('workRoomArea').textContent=mode==='workSilicone'?'Zadej skutečně provedené množství v bm.':'Výměra: '+workRoomMax(mode,room).toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+(mode==='workSkirting'?' bm':' m²');
+ $('screedWorkFactorLabel').style.display=mode==='workScreed'?'block':'none';$('screedWorkFactor').value=screedRoomFactors.work[room.id]||1;
+ $('workRoomEnabled').checked=workIsEnabled(mode,room.id);$('workRoomNote').value=(workNotes[mode]||{})[room.id]||'';refreshWorkRoomToggle();refreshWorkCompletion();$('workRoomDialog').showModal();
+}
+function refreshWorkRoomToggle(){
+ const enabled=$('workRoomEnabled').checked;
+ $('workRoomState').textContent=enabled?'✓ Místnost je zahrnuta do této práce':'✕ V této místnosti se práce neprovádí';
+ $('workRoomToggle').textContent=enabled?'✕ Vypnout místnost pro tuto práci':'✓ Zapnout místnost pro tuto práci';
+ $('workRoomToggle').style.background=enabled?'#a73a3a':'#137b91';
+}
+$('workRoomToggle').onclick=()=>{$('workRoomEnabled').checked=!$('workRoomEnabled').checked;$('workRoomEnabled').onchange();refreshWorkRoomToggle();$('workRoomDialog').close()};
+$('workRoomEnabled').onchange=()=>{
+ if(!editedWorkRoom)return;const id=editedWorkRoom.id;
+ const excluded=new Set(workExcluded[mode]||[]);
+ if($('workRoomEnabled').checked)excluded.delete(id);else excluded.add(id);
+ workExcluded[mode]=[...excluded];refreshWorkRoomToggle();refreshWorkCompletion();render();renderWork();renderFinal();
+};
+$('screedWorkFactor').onchange=()=>{if(!editedWorkRoom)return;const v=Number($('screedWorkFactor').value);if(!Number.isInteger(v)||v<1){alert('Zadej počet úkonů alespoň 1.');return;}screedRoomFactors.work[editedWorkRoom.id]=v;renderFinal();};
+$('workRoomNote').oninput=()=>{if(!editedWorkRoom)return;const notes=workNotes[mode]||(workNotes[mode]={});notes[editedWorkRoom.id]=$('workRoomNote').value;render();};
+$('workRoomClose').onclick=()=>{if(mode==='workScreed'&&editedWorkRoom){const v=Number($('screedWorkFactor').value);if(!Number.isInteger(v)||v<1){alert('Zadej platný počet úkonů.');return;}screedRoomFactors.work[editedWorkRoom.id]=v;renderFinal();}if(mode==='workSilicone'&&editedWorkRoom){const raw=$('workDonePartial').value.trim();if(raw){const n=Number(raw.replace(/\s/g,'').replace(',','.'));if(!Number.isFinite(n)||n<0){alert('Zadej platný počet běžných metrů.');return;}workDoneSave(n);}else{delete (workDone[mode]||{})[editedWorkRoom.id];render();renderWork();renderFinal();}}$('workRoomDialog').close();};
+$('workRoomDialog').addEventListener('close',()=>editedWorkRoom=null);
+function coverageActive(){return mode==='glueTab'||mode==='primerTab'||mode==='screedTab'}
+function coveredArea(tab,room){
+ const value=materialCoverage[tab]?.[room.id];
+ return value==='all'?room.area:Math.min(room.area,Math.max(0,Number(value)||0));
+}
+function coverageUpdate(){
+ const show=coverageActive()&&!!editedRoom;
+ $('materialCoverage').style.display=show?'block':'none';
+ if(!show)return;
+ const r=editedRoom,values=materialCoverage[mode]||{},has=Object.hasOwn(values,r.id);
+ const qty=has?coveredArea(mode,r):null;
+ $('materialCoverageHint').textContent='Celková výměra: '+r.area.toLocaleString('cs-CZ',{maximumFractionDigits:2})+' m²';
+ $('materialPartial').value=has?String(qty).replace('.',','):'';
+ $('materialAll').disabled=!roomIsEnabled(mode,r.id);$('materialPartial').disabled=!roomIsEnabled(mode,r.id);
+ $('materialCoverageState').textContent=has?(qty>=r.area-0.00001?'✓ Celá místnost: ':'✓ Zadaná část: ')+qty.toLocaleString('cs-CZ',{maximumFractionDigits:2})+' m²':'Rozsah zatím není zadán.';
+}
+function coverageSave(value,whole=false){
+ if(!editedRoom||!coverageActive())return;
+ if(!roomIsEnabled(mode,editedRoom.id)){alert('Nejdřív zapni místnost v této záložce.');return;}
+ const max=editedRoom.area;
+ if(!Number.isFinite(value)||value<0||value>max+0.00001){alert('Zadej plochu od 0 do '+max.toLocaleString('cs-CZ',{maximumFractionDigits:2})+' m².');coverageUpdate();return}
+ (materialCoverage[mode]||(materialCoverage[mode]={}))[editedRoom.id]=whole?'all':value;
+ coverageUpdate();render();renderFinal();
+}
+$('materialAll').onclick=()=>{if(editedRoom&&roomIsEnabled(mode,editedRoom.id)){if(mode==='screedTab'&&!(Number($('screedMaterialFactor').value)>0)){alert('Zadej kladnou tloušťku stěrky.');return}coverageSave(editedRoom.area,true);$('roomSave').click();}};
+$('materialPartial').onchange=()=>{if(!$('materialPartial').value.trim()){$('materialClear').click();return}coverageSave(Number($('materialPartial').value.trim().replace(/\s/g,'').replace(',','.')))};
+$('materialClear').onclick=()=>{if(!editedRoom)return;delete (materialCoverage[mode]||{})[editedRoom.id];coverageUpdate();render();renderFinal()};
+function updateMaterialRoomToggle(){
+ if(!editedRoom)return;
+ const enabled=roomIsEnabled(mode,editedRoom.id),label=mode==='roomsTab'?'podlahovinu':materialLabels[mode]||'tuto položku';
+ $('materialRoomToggle').textContent=enabled?'✕ Vypnout místnost pro '+label:'✓ Zapnout místnost pro '+label;
+ $('materialRoomToggle').style.background=enabled?'#a73a3a':'#137b91';
+ $('materialRoomToggleState').textContent=enabled?'Místnost je v této záložce aktivní.':'Místnost je v této záložce vypnutá.';
+}
+$('materialRoomToggle').onclick=()=>{if(!editedRoom)return;setRoomEnabled(mode,editedRoom.id,!roomIsEnabled(mode,editedRoom.id));updateMaterialRoomToggle();coverageUpdate();$('roomDialog').close()};
+function openRoomEditor(room){
+ editedRoom=room;
+ $('roomNameEdit').value=room.name;
+ $('roomNoteEdit').value=visibleRoomNote(room);
+ $('roomAreaEdit').textContent='Plocha: '+room.area.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' m²';
+ $('screedMaterialFactorLabel').style.display=mode==='screedTab'?'grid':'none';$('screedMaterialFactor').value=screedRoomFactors.material[room.id]||1;
+ coverageUpdate();updateMaterialRoomToggle();
+ $('roomDialog').showModal();
+ $('roomNameEdit').focus();
+}
+$('screedMaterialFactor').onchange=()=>{if(!editedRoom)return;const v=Number($('screedMaterialFactor').value);if(!Number.isFinite(v)||v<=0){alert('Zadej kladnou tloušťku v mm.');return;}screedRoomFactors.material[editedRoom.id]=v;renderFinal();};
+$('roomCancel').onclick=()=> $('roomDialog').close();
+$('roomDialog').addEventListener('close',()=>{editedRoom=null});
+$('roomSave').onclick=()=>{
+ if(!editedRoom)return;
+ if(mode==='screedTab'){const v=Number($('screedMaterialFactor').value);if(!Number.isFinite(v)||v<=0){alert('Zadej platnou tloušťku stěrky.');return;}screedRoomFactors.material[editedRoom.id]=v;}
+ const savedRoom=editedRoom;
+ savedRoom.name=$('roomNameEdit').value.trim()||'Místnost';
+ if(materialTabs.includes(mode)){(materialNotes[mode]||(materialNotes[mode]={}))[savedRoom.id]=$('roomNoteEdit').value.trim();}else{savedRoom.note=$('roomNoteEdit').value.trim();}
+ $('roomDialog').close();
+ const index=rooms.indexOf(savedRoom);
+ // Refresh the existing room list without recalculating geometry.
+ const list=$('roomList');const rows=list.querySelectorAll('[data-room-index]');
+ const row=rows[index];if(row){const inputs=row.querySelectorAll('input');if(inputs[0])inputs[0].value=savedRoom.name;if(inputs[1])inputs[1].value=visibleRoomNote(savedRoom)}
+ render();
+ renderSkirtingList();renderFinal();
+ $('status').textContent='Popisek místnosti uložen. Kliknutím na další místnost ji můžeš upravit.';
+};
+function formatMeters(v){return v.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' bm'}
+function calculateSkirting(){
+ if(!roomMap||!rooms.length||!calibration)return;
+ const sx=scaleX(),sy=scaleY(),counts=new Map(rooms.map(r=>[r.id,0]));
+ // Four-connected raster boundary: each exposed pixel edge represents a segment of wall.
+ for(let y=1;y<H-1;y++)for(let x=1;x<W-1;x++){
+  const i=y*W+x,id=roomMap[i];if(!counts.has(id))continue;
+  if(roomMap[i-1]!==id)counts.set(id,counts.get(id)+sy);
+  if(roomMap[i+1]!==id)counts.set(id,counts.get(id)+sy);
+  if(roomMap[i-W]!==id)counts.set(id,counts.get(id)+sx);
+  if(roomMap[i+W]!==id)counts.set(id,counts.get(id)+sx);
+ }
+ const excluded=new Map(rooms.map(r=>[r.id,0]));
+ // For each confirmed door, probe on both sides of its line to find adjoining rooms.
+ // Subtract the doorway length from each adjacent room's skirting perimeter.
+ for(const o of openings){if(o.type!=='door')continue;
+  const dx=o.x2-o.x1,dy=o.y2-o.y1,len=Math.hypot(dx,dy);if(len<1)continue;
+  const nx=-dy/len,ny=dx/len,seen=new Set();
+  for(const t of [.2,.5,.8])for(const sign of [-1,1]){
+   for(const distance of [4,8,14,22,32]){
+    const x=Math.round(o.x1+dx*t+nx*distance*sign),y=Math.round(o.y1+dy*t+ny*distance*sign);
+    if(x<0||y<0||x>=W||y>=H)continue;
+    const id=roomMap[y*W+x];if(counts.has(id)){seen.add(id);break}
+   }
+  }
+  for(const id of seen)excluded.set(id,excluded.get(id)+numberValue('doorWidth')/100);
+ }
+ for(const r of rooms){r.skirtingGross=counts.get(r.id);r.skirtingDoors=excluded.get(r.id);r.skirting=Math.max(0,r.skirtingGross-r.skirtingDoors)}
+ renderSkirtingList();
+}
+function drawSkirting(){
+ drawRoomsBase();
+ if(!rooms.length)return;
+ ctx.save();ctx.textAlign='center';ctx.textBaseline='middle';
+ for(const r of rooms){
+  const note=skirtingNotes[r.id]||'';
+  ctx.font='bold 14px system-ui';ctx.lineWidth=4;ctx.strokeStyle='white';
+  const lines=[r.name,formatMeters(r.skirting||0),...(note?[note]:[])];
+  const start=r.cy-(lines.length-1)*11;
+  lines.forEach((line,i)=>{ctx.font=i===2?'12px system-ui':'bold 14px system-ui';ctx.strokeText(line,r.cx,start+i*22);ctx.fillStyle='#173448';ctx.fillText(line,r.cx,start+i*22)});
+ }
+ ctx.restore();
+}
+function drawRoomsBase(){
+ ctx.fillStyle='#fff';ctx.fillRect(0,0,W,H);if(!mask)return;
+ const source=document.createElement('canvas');source.width=W;source.height=H;
+ const sc=source.getContext('2d',{willReadFrequently:true});sc.drawImage(img,0,0,W,H);
+ const original=sc.getImageData(0,0,W,H).data;
+ const pixels=ctx.createImageData(W,H),d=pixels.data,roomById=new Map(rooms.map(r=>[r.id,r]));
+ for(let i=0;i<W*H;i++){
+  const k=i*4,wall=mask[i]&&!hidden.has(labels[i]),room=roomMap?roomById.get(roomMap[i]):null;
+  if(wall){d[k]=original[k];d[k+1]=original[k+1];d[k+2]=original[k+2]}
+  else if(room){d[k]=Math.round(255*.77+room.color[0]*.23);d[k+1]=Math.round(255*.77+room.color[1]*.23);d[k+2]=Math.round(255*.77+room.color[2]*.23)}
+  else{d[k]=255;d[k+1]=255;d[k+2]=255}d[k+3]=255;
+ }
+ ctx.putImageData(pixels,0,0);drawOpenings();
+}
+function updateSkirtingRoomToggle(){
+ if(!editedSkirtingRoom)return;
+ const enabled=roomIsEnabled('skirtingTab',editedSkirtingRoom.id);
+ $('skirtingRoomToggle').textContent=enabled?'✕ Vypnout místnost pro lišty':'✓ Zapnout místnost pro lišty';
+ $('skirtingRoomToggle').style.background=enabled?'#a73a3a':'#137b91';
+ $('skirtingRoomToggleState').textContent=enabled?'Lišty jsou v místnosti aktivní.':'Lišty jsou v této místnosti vypnuté.';
+}
+$('skirtingRoomToggle').onclick=()=>{if(!editedSkirtingRoom)return;setRoomEnabled('skirtingTab',editedSkirtingRoom.id,!roomIsEnabled('skirtingTab',editedSkirtingRoom.id));updateSkirtingRoomToggle();$('skirtingDialog').close()};
+function openSkirtingEditor(room){
+ editedSkirtingRoom=room;$('skirtingNameEdit').value=room.name;
+ $('skirtingNoteEdit').value=skirtingNotes[room.id]||'';
+ $('skirtingLengthEdit').textContent='Lišty: '+formatMeters(room.skirting||0);
+ updateSkirtingRoomToggle();$('skirtingDialog').showModal();$('skirtingNoteEdit').focus();
+}
+$('skirtingCancel').onclick=()=>$('skirtingDialog').close();
+$('skirtingDialog').addEventListener('close',()=>{editedSkirtingRoom=null});
+$('skirtingSave').onclick=()=>{
+ if(!editedSkirtingRoom)return;
+ skirtingNotes[editedSkirtingRoom.id]=$('skirtingNoteEdit').value.trim();
+ $('skirtingDialog').close();renderSkirtingList();renderFinal();render();
+ $('status').textContent='Popisek lišt uložen.';
+};
+function renderSkirtingList(){
+ const list=$('skirtingList');list.replaceChildren();if(!rooms.length)return;
+ const total=rooms.reduce((sum,r)=>sum+(r.skirting||0),0);
+ const heading=document.createElement('div');
+ heading.innerHTML='<b>Lišty podle místností: '+rooms.length+'</b><p>Celkem: <strong>'+formatMeters(total)+'</strong></p>';
+ list.append(heading);
+ for(const r of rooms){
+  const row=document.createElement('div');row.style.cssText='display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid #ddd';
+  const name=document.createElement('span');name.textContent=r.name;name.style.minWidth='160px';
+  const len=document.createElement('strong');len.textContent=formatMeters(r.skirting||0);
+  const note=document.createElement('span');note.textContent=skirtingNotes[r.id]||'';
+  const edit=document.createElement('button');edit.textContent='Upravit popisek';edit.onclick=()=>openSkirtingEditor(r);
+  row.append(name,len,note,edit);list.append(row);
+ }
+ const caution=document.createElement('p');caution.style.color='#8b4a19';caution.textContent='Orientační délky podle hranic rozpoznaných místností. Okna se neodečítají, označené dveře ano. U členitých stěn a nepřesně uzavřených otvorů ověř délky před objednávkou.';list.append(caution);
+}
+
+// Závěr: combine identical room material notes and identical skirting notes.
+function finalKey(text){return (text||'').trim().replace(/\s+/g,' ').toLocaleLowerCase('cs-CZ')}
+function finalNumber(v){const n=Number(String(v).trim().replace(/\s/g,'').replace(',','.'));return Number.isFinite(n)?n:0}
+function finalMoney(v){return v.toLocaleString('cs-CZ',{style:'currency',currency:'CZK',minimumFractionDigits:2,maximumFractionDigits:2})}
+function finalGroups(){
+ const map=new Map();
+ for(const r of rooms){
+  const material=roomIsEnabled('roomsTab',r.id)?(r.note||'').trim():'';if(material){const key='m:'+finalKey(material);if(!map.has(key))map.set(key,{key,name:material,unit:'m²',qty:0,kind:'material'});map.get(key).qty+=r.area||0}
+  for(const tab of ['primerTab','glueTab','screedTab']){
+   const label=(materialNotes[tab]||{})[r.id]||materialLabels[tab];
+   const amount=coveredArea(tab,r);
+   if(roomIsEnabled(tab,r.id)&&Number.isFinite(amount)&&amount>0){
+    const factor=tab==='screedTab'?(Number(screedRoomFactors.material[r.id])||1):1;
+    const key='mat:'+tab+':'+finalKey(label)+(tab==='screedTab'?':'+factor:'');
+    if(!map.has(key))map.set(key,{key,name:materialLabels[tab]+' – '+label+(tab==='screedTab'?' ('+factor+' mm)':''),unit:'m²',qty:0,kind:'material',screed:tab==='screedTab',factor});
+    map.get(key).qty+=amount;
+   }
+  }
+  const skirting=roomIsEnabled('skirtingTab',r.id)?(skirtingNotes[r.id]||'').trim():'';if(skirting){const key='l:'+finalKey(skirting);if(!map.has(key))map.set(key,{key,name:'Lišty – '+skirting,unit:'bm',qty:0,kind:'material'});map.get(key).qty+=r.skirting||0}
+ }
+ for(const tab of completionTabs){
+  if(tab==='workScreed'){
+   for(const r of rooms){const qty=workDoneValue(tab,r);if(qty<=0)continue;
+    const label=((workNotes[tab]||{})[r.id]||'').trim()||'Stěrkování';
+    const factor=Number(screedRoomFactors.work[r.id])||1;
+    const key='wa:'+tab+':'+finalKey(label)+':'+factor;
+    if(!map.has(key))map.set(key,{key,name:'Práce – '+label+' ('+factor+'× úkon)',unit:'m²',qty:0,kind:'work',screed:true,factor});
+    map.get(key).qty+=qty;
+   }
+  }else{const qty=workDoneTotal(tab);if(qty>0){const key='wa:'+tab;map.set(key,{key,name:'Práce – '+workLabels[tab],unit:(tab==='workSkirting'||tab==='workSilicone')?'bm':'m²',qty,kind:'work'});}}
+ }
+ // Ručně zadané pracovní položky bez potvrzení v konkrétní místnosti se neúčtují.
+ // Do závěru vstupují pouze skutečně potvrzené výměry přes workDone.
+ return [...map.values()].sort((a,b)=>(a.kind===b.kind? a.key.localeCompare(b.key,'cs'):a.kind==='material'?-1:1));
+}
+function renderFinal(){
+ const panel=$('finalList');if(!panel)return;
+ panel.replaceChildren();
+ const title=document.createElement('h2');title.textContent='Závěr patra – materiál + práce';panel.append(title);
+ const intro=document.createElement('p');intro.className='final-hint';intro.textContent='Společný soupis materiálu a práce na vybraném patře. Stejné materiály se sčítají. Práce se započítá až po potvrzení hotového množství přímo v místnosti. U stěrky je cena za 1 m² a 1 mm, u stěrkování za 1 m² a jeden úkon. Cena řádku zahrnuje uvedený násobitel.';panel.append(intro);
+
+ const groups=finalGroups();
+ // Doplňkové položky jsou pouze v závěru, nezávisle na místnostech.
+ for(const [key,name,unit] of [['extra:more','Vícepráce','hod'],['extra:handling','Manipulace','hod'],['extra:transport','Doprava','km']]){
+  const saved=finalPrices[key]||(finalPrices[key]={net:'',gross:'',vat:'21',source:'net',quantity:''});
+  groups.push({key,name,unit,qty:Math.max(0,finalNumber(saved.quantity)),kind:'extra',extra:true});
+ }
+ const wrap=document.createElement('div');wrap.className='final-scroll';const table=document.createElement('table');table.className='final-table';
+ const head=document.createElement('thead');const hrow=document.createElement('tr');for(const text of ['Položka','Množství','Cena bez DPH / jedn.','DPH %','Cena s DPH / jedn.','Celkem bez DPH','Celkem s DPH']){const th=document.createElement('th');th.textContent=text;hrow.append(th)}head.append(hrow);table.append(head);
+ const body=document.createElement('tbody');const summaries=[];let currentKind='';
+ for(const g of groups){
+  if(g.kind!==currentKind){currentKind=g.kind;const sectionRow=document.createElement('tr');sectionRow.className='final-section-row';const sectionCell=document.createElement('td');sectionCell.colSpan=7;sectionCell.textContent=g.kind==='material'?'MATERIÁL':g.kind==='extra'?'DOPLŇKOVÉ POLOŽKY':'PRÁCE';sectionRow.append(sectionCell);body.append(sectionRow);}
+  const multiplier=g.factor||1;
+  let effectiveQty=g.qty*multiplier;
+  const state=finalPrices[g.key]||(finalPrices[g.key]={net:'',gross:'',vat:'21',source:'net'});
+  const tr=document.createElement('tr');if(g.extra)tr.className='extra-cost-row';const name=document.createElement('td');name.textContent=g.name;tr.append(name);
+  const qty=document.createElement('td');
+  if(g.extra){const qInput=document.createElement('input');qInput.type='text';qInput.inputMode='decimal';qInput.placeholder=g.unit==='km'?'Počet km':'Počet hodin';qInput.setAttribute('aria-label',(g.unit==='km'?'Počet km':'Počet hodin')+' – '+g.name);qInput.value=state.quantity||'';qty.append(qInput,document.createTextNode(' '+g.unit));qInput.addEventListener('input',()=>{state.quantity=qInput.value;g.qty=Math.max(0,finalNumber(qInput.value));effectiveQty=g.qty;recalc()});}
+  else qty.textContent=g.qty.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' '+g.unit+(g.screed?' × '+multiplier+(g.kind==='material'?' mm':' úkonů'):'');tr.append(qty);
+  function field(label,value){const td=document.createElement('td');const input=document.createElement('input');input.type='text';input.inputMode='decimal';input.setAttribute('aria-label',label+' – '+g.name);input.value=value;td.append(input);tr.append(td);return input}
+  const net=field('Cena bez DPH',state.net),vat=field('DPH',state.vat),gross=field('Cena s DPH',state.gross);
+  const netTotal=document.createElement('td'),grossTotal=document.createElement('td');tr.append(netTotal,grossTotal);body.append(tr);
+  const summary={net:0,vat:0,gross:0,kind:g.kind};summaries.push(summary);
+  function recalc(){const rate=Math.max(0,finalNumber(state.vat));const factor=1+rate/100;let n=0,grossUnit=0;
+   if(state.source==='gross'){grossUnit=finalNumber(state.gross);n=grossUnit/factor;net.value=state.gross.trim()?n.toLocaleString('cs-CZ',{maximumFractionDigits:4}):'';state.net=net.value}
+   else {n=finalNumber(state.net);grossUnit=n*factor;gross.value=state.net.trim()?grossUnit.toLocaleString('cs-CZ',{maximumFractionDigits:4}):'';state.gross=gross.value}
+   summary.net=effectiveQty*n;summary.gross=effectiveQty*grossUnit;summary.vat=summary.gross-summary.net;
+   netTotal.textContent=finalMoney(summary.net);grossTotal.textContent=finalMoney(summary.gross);renderTotals();
+  }
+  net.addEventListener('input',()=>{state.net=net.value;state.source='net';recalc()});gross.addEventListener('input',()=>{state.gross=gross.value;state.source='gross';recalc()});vat.addEventListener('input',()=>{state.vat=vat.value;recalc()});
+  summary.recalc=recalc;
+ }
+ table.append(body);wrap.append(table);panel.append(wrap);
+ const totals=document.createElement('div');totals.className='final-totals';panel.append(totals);
+ function renderTotals(){if(!totals.isConnected)return;totals.replaceChildren();
+  function add(label,value,cls){const row=document.createElement('div');if(cls)row.className=cls;const a=document.createElement('span'),b=document.createElement('strong');a.textContent=label;b.textContent=finalMoney(value);row.append(a,b);totals.append(row)}
+  for(const [kind,label] of [['material','MEZISOUČET MATERIÁL'],['work','MEZISOUČET PRÁCE'],['extra','MEZISOUČET DOPLŇKOVÉ POLOŽKY']]){
+   const subset=summaries.filter(s=>s.kind===kind);if(!subset.length)continue;
+   add(label+' bez DPH',subset.reduce((v,s)=>v+s.net,0),'subtotal');
+   add(label+' s DPH',subset.reduce((v,s)=>v+s.gross,0),'');
+  }
+  const net=summaries.reduce((s,r)=>s+r.net,0),vat=summaries.reduce((s,r)=>s+r.vat,0),gross=summaries.reduce((s,r)=>s+r.gross,0);
+  add('Celkem bez DPH',net,'combined');add('DPH celkem',vat,'');add('CELKEM S DPH',gross,'grand');
+ }
+ for(const s of summaries)s.recalc();renderTotals();
+ const exportBar=document.createElement('div');exportBar.className='final-export';
+ const gmailBtn=document.createElement('button');gmailBtn.textContent='✉ Odeslat přes Gmail';gmailBtn.type='button';
+ const gmailAppBtn=document.createElement('button');gmailAppBtn.textContent='✉ Gmail (aplikace)';gmailAppBtn.type='button';gmailAppBtn.className='secondary';
+ const emailBtn=document.createElement('button');emailBtn.textContent='✉ Jiný e-mail (mailto)';emailBtn.type='button';emailBtn.className='secondary';
+ const toLabel=document.createElement('label');toLabel.className='mail-to';toLabel.textContent='Komu ';const toInput=document.createElement('input');toInput.type='email';toInput.inputMode='email';toInput.placeholder='e-mail příjemce (volitelné)';toInput.value=mailToValue;toInput.addEventListener('input',()=>{mailToValue=toInput.value});toLabel.append(toInput);
+ const txtBtn=document.createElement('button');txtBtn.textContent='↓ Stáhnout soupis (.txt)';txtBtn.type='button';txtBtn.className='secondary';
+ const copyBtn=document.createElement('button');copyBtn.textContent='Kopírovat soupis';copyBtn.type='button';copyBtn.className='secondary';
+ const exportHelp=document.createElement('p');exportHelp.className='final-hint';exportHelp.textContent='Gmail otevře nový e-mail s připraveným soupisem, odeslání potvrdíš sám. Soupis se týká aktuálně zvoleného patra. U dlouhého soupisu se text zkopíruje do schránky a do e-mailu ho vložíš.';
+ function buildExport(){
+  const lines=['SOUPIS MATERIÁLU A PRÁCE – VÝMĚRY PODLAH',floorProjects[activeFloor].name,''];
+  for(let i=0;i<groups.length;i++){
+   const g=groups[i],s=summaries[i],p=finalPrices[g.key];
+   if(!i||g.kind!==groups[i-1].kind)lines.push('',g.kind==='extra'?'DOPLŇKOVÉ POLOŽKY':g.kind==='material'?'MATERIÁL':'PRÁCE','');
+   const factor=g.factor||1;const qty=g.qty.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2});
+   const netUnit=p.source==='gross'?finalNumber(p.gross)/(1+Math.max(0,finalNumber(p.vat))/100):finalNumber(p.net);
+   const grossUnit=p.source==='gross'?finalNumber(p.gross):netUnit*(1+Math.max(0,finalNumber(p.vat))/100);
+   lines.push(g.name, 'Množství: '+qty+' '+g.unit+(g.screed?' × '+factor+(g.kind==='material'?' mm':' úkonů'):''),
+    'Jednotková cena bez DPH: '+finalMoney(netUnit),
+    'DPH: '+Math.max(0,finalNumber(p.vat)).toLocaleString('cs-CZ')+' %',
+    'Jednotková cena s DPH: '+finalMoney(grossUnit),
+    'Celkem bez DPH: '+finalMoney(s.net),
+    'Celkem s DPH: '+finalMoney(s.gross),'');
+  }
+  for(const [kind,label] of [['material','MATERIÁL'],['work','PRÁCE'],['extra','DOPLŇKOVÉ POLOŽKY']]){const subset=summaries.filter(s=>s.kind===kind);if(subset.length)lines.push('MEZISOUČET '+label+' bez DPH: '+finalMoney(subset.reduce((v,s)=>v+s.net,0)),'MEZISOUČET '+label+' s DPH: '+finalMoney(subset.reduce((v,s)=>v+s.gross,0)),'');}
+  const net=summaries.reduce((s,r)=>s+r.net,0),vatTotal=summaries.reduce((s,r)=>s+r.vat,0),gross=summaries.reduce((s,r)=>s+r.gross,0);
+  lines.push('--------------------------------','CELKEM BEZ DPH: '+finalMoney(net),'DPH CELKEM: '+finalMoney(vatTotal),'CELKEM S DPH: '+finalMoney(gross),'','Upozornění: výměry jsou orientační; ověř před objednáním.');
+  return lines.join('\n');
+ }
+ function copyNow(text){let ok=false;try{const ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.cssText='position:fixed;top:0;left:0;opacity:0';document.body.append(ta);ta.select();ta.setSelectionRange(0,text.length);ok=document.execCommand('copy');ta.remove()}catch(e){}try{if(navigator.clipboard)navigator.clipboard.writeText(text).catch(()=>{})}catch(e){}return ok}
+ function sendMail(kind){
+  const body=buildExport(),subject='Soupis materiálu a práce – '+floorProjects[activeFloor].name,enc=encodeURIComponent,to=mailToValue.replace(/\s/g,'');
+  const mk={
+   gmail:b=>'https://mail.google.com/mail/?view=cm&fs=1'+(to?'&to='+enc(to):'')+'&su='+enc(subject)+'&body='+enc(b),
+   gmailapp:b=>'googlegmail:///co?'+(to?'to='+enc(to)+'&':'')+'subject='+enc(subject)+'&body='+enc(b),
+   mailto:b=>'mailto:'+to+'?subject='+enc(subject)+'&body='+enc(b)}[kind];
+  const limit=kind==='mailto'?1800:6500;
+  let url=mk(body),tooLong=false;
+  if(url.length>limit){tooLong=true;copyNow(body);url=mk('Soupis je zkopírovaný do schránky – vlož ho sem (Ctrl+V nebo Vložit). Byl příliš dlouhý na přímé vložení do e-mailu.')}
+  let opened=true;
+  if(kind==='gmail'){const w=window.open(url,'_blank');if(w){try{w.opener=null}catch(e){}}else opened=false}
+  else{window.location.href=url}
+  if(!opened){copyNow(body);exportHelp.textContent='Okno Gmailu se nepodařilo otevřít. Soupis je zkopírovaný do schránky: otevři Gmail a vlož ho (Vložit).'}
+  else exportHelp.textContent=tooLong?'Soupis je příliš dlouhý pro přímé vložení, proto je zkopírovaný do schránky. V novém e-mailu ho vlož (Vložit).':'E-mail je připravený, odeslání potvrdíš v e-mailu.';
+ }
+ gmailBtn.addEventListener('click',()=>sendMail('gmail'));
+ gmailAppBtn.addEventListener('click',()=>sendMail('gmailapp'));
+ emailBtn.addEventListener('click',()=>sendMail('mailto'));
+ txtBtn.addEventListener('click',()=>{saveTextFile('soupis-materialu-a-prace.txt','\uFEFF'+buildExport(),'text/plain')});
+ copyBtn.addEventListener('click',async()=>{const txt=buildExport();try{await navigator.clipboard.writeText(txt);copyBtn.textContent='Zkopírováno';setTimeout(()=>copyBtn.textContent='Kopírovat soupis',1800)}catch{const ta=document.createElement('textarea');ta.value=txt;document.body.append(ta);ta.select();document.execCommand('copy');ta.remove();alert('Soupis byl zkopírován, vlož ho do e-mailu.')}});
+ const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+ exportBar.append(toLabel,gmailBtn,...(isIOS?[gmailAppBtn]:[]),emailBtn,txtBtn,copyBtn);panel.append(exportBar,exportHelp);
+ const caution=document.createElement('p');caution.className='final-hint';caution.textContent='Výsledky vycházejí z orientačních výměr. Sazba 21 % je pouze výchozí návrh, nikoliv určení správné DPH pro zakázku. Ceny a další údaje se průběžně ukládají v tomto zařízení.';panel.append(caution);
+}
+
+
+function openSummary(){
+ if(!summaryActive){floorViews[activeFloor]??={material:'orig',work:'orig'};floorViews[activeFloor][activeView]=mode;}
+ summaryActive=true;document.body.classList.add('final-mode');
+ $('finalList').style.display='block';$('workList').style.display='none';$('roomList').style.display='none';$('skirtingList').style.display='none';
+ document.querySelector('.frame').style.display='none';
+ renderFinal();floorRenderTabs();
+}
+function renderWork(){
+ const panel=$('workList');panel.replaceChildren();
+ const heading=document.createElement('strong');heading.textContent=(workLabels[mode]||'Práce')+' – '+floorProjects[activeFloor].name;panel.append(heading);
+ const help=document.createElement('p');help.className='final-hint';help.textContent=areaWorkTabs.includes(mode)?'Místnosti se přebírají z Podlahoviny. Kliknutím na místnost označíš hotovou práci (celou nebo část), doplníš popis nebo práci vypneš. Závěr počítá pouze skutečně potvrzenou hotovou práci.':'Položky této činnosti mají vlastní množství a jednotky. Cenu a DPH doplníš ve společném Závěru.';panel.append(help);
+ if(completionTabs.includes(mode)){const completed=document.createElement('h3');completed.textContent='Hotovo: '+workDoneTotal(mode).toLocaleString('cs-CZ',{maximumFractionDigits:2})+((mode==='workSkirting'||mode==='workSilicone')?' bm':' m²');panel.append(completed)}
+ if(areaWorkTabs.includes(mode)){const total=document.createElement('h3');total.textContent='Celkem pro '+workLabels[mode]+': '+workArea(mode).toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' m²';panel.append(total);for(const r of rooms){const line=document.createElement('div');line.className='work-row';const label=document.createElement('span');label.textContent=r.name+' · '+r.area.toLocaleString('cs-CZ',{maximumFractionDigits:2})+' m²';const toggle=document.createElement('button');const enabled=workIsEnabled(mode,r.id);toggle.textContent=enabled?'✓ Zahrnuto':'✕ Vypnuto';toggle.className=enabled?'':'secondary';toggle.onclick=()=>openWorkRoomEditor(r);line.append(label,toggle);panel.append(line)}if(!rooms.length){const hint=document.createElement('p');hint.textContent='Nejdřív vypočítej místnosti ze společného půdorysu.';panel.append(hint);const calc=document.createElement('button');calc.textContent='Vypočítat místnosti';calc.onclick=()=>{try{calculateRooms();if(rooms.length){activeView='work';document.body.classList.add('work-view');setMode('workSand');}}catch(error){alert('Výpočet místností: '+error.message)}};panel.append(calc)}}
+ if((mode==='workSkirting'||mode==='workSilicone')&&rooms.length){for(const r of rooms){const b=document.createElement('button');b.className='secondary';b.textContent=r.name+' · '+workDoneValue(mode,r).toLocaleString('cs-CZ',{maximumFractionDigits:2})+(mode==='workSilicone'?' bm':' / '+workRoomMax(mode,r).toLocaleString('cs-CZ',{maximumFractionDigits:2})+' bm');b.onclick=()=>openWorkRoomEditor(r);panel.append(b)}}
+ for(const item of workItems.filter(x=>x.category===mode)){
+  const row=document.createElement('div');row.className='work-row';
+  const name=document.createElement('input');name.placeholder='Např. pokládka vinylu';name.value=item.name;
+  const qty=document.createElement('input');qty.placeholder='Množství';qty.inputMode='decimal';qty.value=item.qty;
+  const unit=document.createElement('select');for(const v of ['m²','bm','ks','hod','kpl']){const o=document.createElement('option');o.value=v;o.textContent=v;unit.append(o)}unit.value=item.unit;
+  const del=document.createElement('button');del.textContent='Smazat';del.className='secondary';del.onclick=()=>{workItems=workItems.filter(x=>x.id!==item.id);delete finalPrices['w:'+item.id];renderWork()};
+  name.oninput=()=>item.name=name.value;qty.oninput=()=>item.qty=qty.value;unit.onchange=()=>item.unit=unit.value;
+  row.append(name,qty,unit,del);panel.append(row);
+ }
+ const add=document.createElement('button');add.textContent='+ Přidat položku: '+workLabels[mode];add.onclick=()=>{workItems.push({id:nextWorkId++,category:mode,name:workLabels[mode],qty:'',unit:mode==='workSkirting'||mode==='workSilicone'?'bm':'m²'});renderWork()};panel.append(add);
+}
+
+function showRoomMessage(message){$('roomList').style.display='block';$('roomList').textContent=message;$('status').textContent=message;setMode('roomsTab')}
+function calculateRooms(){
+ if(!mask){showRoomMessage('Nejdřív nahraj půdorys.');return}
+ if(!calibration){showRoomMessage('Nejdřív označ jednu stěnu a klikni na Uložit délku. Bez měřítka nelze vypočítat m².');return}
+ let cm=numberValue('doorWidth');if(!Number.isFinite(cm)||cm<=0){showRoomMessage('Zadej platnou šířku futer v centimetrech.');return}
+ // Only manually confirmed openings are used. Never auto-generate bridges.
+ const N=W*H; let wall=new Uint8Array(N);
+ for(let i=0;i<N;i++)if(mask[i]&&!hidden.has(labels[i]))wall[i]=1;
+ // Rasterize confirmed or proposed openings as thin separating boundaries.
+ let bridges=0;
+ for(let o of openings){if(o.type==='ignore')continue;
+  let dx=o.x2-o.x1,dy=o.y2-o.y1,steps=Math.max(1,Math.ceil(Math.hypot(dx,dy)*2));
+  for(let j=0;j<=steps;j++){let x=Math.round(o.x1+dx*j/steps),y=Math.round(o.y1+dy*j/steps);for(let yy=y-1;yy<=y+1;yy++)for(let xx=x-1;xx<=x+1;xx++)if(xx>=0&&yy>=0&&xx<W&&yy<H)wall[yy*W+xx]=1}bridges++;
+ }
+ // Robust room-boundary raster: thicken existing wall pixels just for flood-fill.
+ // This does NOT alter the displayed original wall geometry.
+ // Thin raster gaps between detected wall pixels otherwise connect every room to outside.
+ const solid=wall.slice();
+ // 3x3 close (dilate then erode) heals 1-2 px holes in thick walls.
+ let expanded=new Uint8Array(N);
+ for(let y=1;y<H-1;y++)for(let x=1;x<W-1;x++){
+  let i=y*W+x;
+  if(solid[i]||solid[i-1]||solid[i+1]||solid[i-W]||solid[i+W]||solid[i-W-1]||solid[i-W+1]||solid[i+W-1]||solid[i+W+1])expanded[i]=1;
+ }
+ let closed=new Uint8Array(N);
+ for(let y=2;y<H-2;y++)for(let x=2;x<W-2;x++){
+  let i=y*W+x,all=true;
+  for(let yy=-1;yy<=1&&all;yy++)for(let xx=-1;xx<=1;xx++)if(!expanded[i+yy*W+xx]){all=false;break}
+  if(all)closed[i]=1;
+ }
+ wall=closed;
+ let ids=new Int32Array(N);ids.fill(-1);let q=new Int32Array(N),found=[];
+ const minArea=Math.max(120,Math.round(0.35/(scaleX()*scaleY())));
+ for(let i=0;i<N;i++){
+  if(wall[i]||ids[i]!==-1)continue;
+  let id=found.length,front=0,end=1;ids[i]=id;q[0]=i;let count=0,sx=0,sy=0,edge=false,minx=W,maxx=0,miny=H,maxy=0;
+  while(front<end){let v=q[front++],x=v%W,y=(v/W)|0;count++;sx+=x;sy+=y;minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(x===0||y===0||x===W-1||y===H-1)edge=true;
+   for(let n of [x>0?v-1:-1,x<W-1?v+1:-1,y>0?v-W:-1,y<H-1?v+W:-1])if(n>=0&&!wall[n]&&ids[n]===-1){ids[n]=id;q[end++]=n}
+  }
+  found.push({id,count,cx:sx/count,cy:sy/count,edge,minx,maxx,miny,maxy});
+ }
+ let candidates=found.filter(r=>!r.edge&&r.count>=minArea&&r.maxx-r.minx>15&&r.maxy-r.miny>15);
+ candidates.sort((a,b)=>a.cy-b.cy||a.cx-b.cx);
+ const palette=[[120,205,224],[241,189,122],[166,211,165],[205,177,224],[241,174,184],[150,196,243],[240,217,137]];
+ if(!candidates.length){rooms=[];roomOverlay=null;roomValid=false;showRoomMessage('Nebyly nalezeny žádné uzavřené místnosti. Překreslené stěny mají pravděpodobně mezery. Ručně uzavři všechna okna a dveře a zkus výpočet znovu. Počet nalezených otevřených oblastí: '+found.filter(r=>r.edge).length+'; pomocné spojnice: '+bridges+'.');return;}
+ const previousRooms=rooms.length?rooms:previousLayout;
+ const used=new Set(),mapping=new Map();
+ function matchRoom(r){
+  const radius=Math.max(25,Math.min(r.maxx-r.minx,r.maxy-r.miny)*.3);
+  const old=previousRooms.filter(p=>!used.has(p)&&Math.hypot(p.cx-r.cx,p.cy-r.cy)<radius)
+   .sort((a,b)=>Math.hypot(a.cx-r.cx,a.cy-r.cy)-Math.hypot(b.cx-r.cx,b.cy-r.cy))[0];
+  if(old){used.add(old);mapping.set(old.id??r.id,r.id)}
+  return old;
+ }
+ rooms=candidates.map((r,i)=>{const old=matchRoom(r);return {...r,name:old?old.name:'Místnost '+(i+1),note:old?(old.note||''):'',area:r.count*scaleX()*scaleY(),color:palette[i%palette.length]}});
+ if(previousRooms.length){
+  const remap=obj=>Object.fromEntries([...mapping].filter(([id])=>Object.hasOwn(obj||{},id)).map(([id,next])=>[next,obj[id]]));
+  for(const groups of [materialNotes,materialCoverage,workNotes,workDone,screedRoomFactors])
+   for(const key of Object.keys(groups))groups[key]=remap(groups[key]);
+  skirtingNotes=remap(skirtingNotes);
+  for(const groups of [workExcluded,roomDisabled])for(const key of Object.keys(groups))
+   groups[key]=groups[key].filter(id=>mapping.has(id)).map(id=>mapping.get(id));
+ }
+ previousLayout=[];
+ roomMap=ids;roomValid=true;roomOverlay=null;calculateSkirting();renderFinal();
+ floorViews[activeFloor]??={};
+ for(const [v,defaultTab] of [['material','roomsTab'],['work','workSand']])if(!floorViews[activeFloor][v]||['orig','compare'].includes(floorViews[activeFloor][v]))floorViews[activeFloor][v]=defaultTab;
+ let total=rooms.reduce((s,r)=>s+r.area,0);
+ $('roomList').style.display='block';
+ const list=$('roomList');list.replaceChildren();
+ const heading=document.createElement('div');heading.innerHTML='<b>Rozpoznané místnosti: '+rooms.length+'</b><p>Celková plocha: <strong>'+total.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' m²</strong></p><p style="color:#506070">Klikni přímo na barevnou místnost v půdorysu a otevře se okno pro její název a popisek. Upravit je můžeš také níže.</p>';list.append(heading);
+ rooms.forEach((r,i)=>{
+  const row=document.createElement('div');row.dataset.roomIndex=i;row.style.cssText='padding:10px 0;border-bottom:1px solid #ddd;display:flex;gap:12px;align-items:center;flex-wrap:wrap';
+  const nameLabel=document.createElement('label');nameLabel.textContent='Název '+(i+1)+' ';const nameInput=document.createElement('input');nameInput.value=r.name;nameInput.style.width='170px';nameInput.setAttribute('aria-label','Název místnosti '+(i+1));nameInput.addEventListener('input',()=>{r.name=nameInput.value;render();renderFinal()});nameLabel.append(nameInput);
+  const noteLabel=document.createElement('label');noteLabel.textContent='Popisek ';const noteInput=document.createElement('input');noteInput.value=visibleRoomNote(r);noteInput.placeholder='např. vinyl, 2. patro';noteInput.style.width='220px';noteInput.setAttribute('aria-label','Popisek místnosti '+(i+1));noteInput.addEventListener('input',()=>{if(materialTabs.includes(mode)){(materialNotes[mode]||(materialNotes[mode]={}))[r.id]=noteInput.value}else{r.note=noteInput.value}render();renderFinal()});noteLabel.append(noteInput);
+  const area=document.createElement('strong');area.textContent=r.area.toLocaleString('cs-CZ',{minimumFractionDigits:2,maximumFractionDigits:2})+' m²';
+  row.append(nameLabel,noteLabel,area);list.append(row);
+ });
+ const caution=document.createElement('p');caution.style.color='#8b4a19';caution.textContent='Kontrolní výpočet: plochy jsou orientační. Neuzavřené místnosti nejsou v součtu a plocha dveřních prahů se zatím samostatně nepřičítá. Před použitím na zakázce ověř výměry.';list.append(caution);
+ setMode('roomsTab');$('status').textContent='Nalezeno '+rooms.length+' uzavřených místností. Pomocných spojnic: '+bridges+'. Zkontroluj, zda nechybí některé prostory; výsledky jsou zatím orientační.';
+}
+function validateRoomInputs(){
+ document.querySelectorAll('.required-missing').forEach(el=>el.classList.remove('required-missing'));
+ const missing=[];
+ if(!mask)missing.push($('pickBtns'));
+ if(!calibration){missing.push($('length')); if(!$('length').value.trim())$('status').textContent='Pro výpočet označ stěnu, vyplň její skutečnou délku a klikni na Uložit délku.';}
+ const width=numberValue('doorWidth');
+ if(!Number.isFinite(width)||width<=0)missing.push($('doorWidth'));
+ if(missing.length){$('toolsPanel').open=true;missing.forEach(el=>el.classList.add('required-missing'));missing[0].scrollIntoView({block:'nearest',behavior:'smooth'});return false;}
+ return true;
+}
+['file','length','doorWidth'].forEach(id=>$(id).addEventListener('input',()=>$(id).classList.remove('required-missing')));
+function runOriginalRoomCalculation(){if(!validateRoomInputs())return;try{calculateRooms()}catch(error){console.error(error);$('toolsPanel').open=true;alert('Výpočet místností se nepodařil: '+(error?.message||String(error)));}}
+$('roomsCalc').onclick=runOriginalRoomCalculation;updateMeasureButton();
+
+/* ===== 10.0 | Automatické ukládání (IndexedDB), záloha, mazání ===== */
+const DB_NAME='vymery-podlah',DB_STORE='kv';
+let persistReady=false,persistBlocked=false,persistSaving=false,lastSig='',savedImgIds=[],savedCount=0,dlNs=null;
+const imgIds=new WeakMap();let imgSeq=0;
+function imgId(im){if(!im)return 0;if(!imgIds.has(im))imgIds.set(im,++imgSeq);return imgIds.get(im)}
+function setSaveState(st){const el=$('saveState');if(!el)return;el.textContent={saving:'💾 Ukládám…',saved:'💾 Uloženo',error:'⚠ Ukládání selhalo',unavailable:'⚠ Ukládání není dostupné',paused:'⚠ Ukládání pozastaveno'}[st]||'';el.dataset.state=st}
+function idbOpen(){return new Promise((res,rej)=>{try{const r=indexedDB.open(DB_NAME,1);r.onupgradeneeded=()=>r.result.createObjectStore(DB_STORE);r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error||new Error('IDB open'));r.onblocked=()=>rej(new Error('IDB blocked'))}catch(e){rej(e)}})}
+async function idbReadAll(){const db=await idbOpen();return new Promise((res,rej)=>{const tx=db.transaction(DB_STORE,'readonly'),st=tx.objectStore(DB_STORE),all={},rq=st.openCursor();rq.onsuccess=()=>{const c=rq.result;if(c){all[c.key]=c.value;c.continue()}};tx.oncomplete=()=>{db.close();res(all)};tx.onerror=tx.onabort=()=>{db.close();rej(tx.error||new Error('IDB read'))}})}
+async function idbWrite(puts,dels){const db=await idbOpen();return new Promise((res,rej)=>{const tx=db.transaction(DB_STORE,'readwrite'),st=tx.objectStore(DB_STORE);for(const [k,v] of puts)st.put(v,k);for(const k of dels)st.delete(k);tx.oncomplete=()=>{db.close();res()};tx.onerror=tx.onabort=()=>{db.close();rej(tx.error||new Error('IDB write'))}})}
+async function idbClear(){const db=await idbOpen();return new Promise((res,rej)=>{const tx=db.transaction(DB_STORE,'readwrite');tx.objectStore(DB_STORE).clear();tx.oncomplete=()=>{db.close();res()};tx.onerror=tx.onabort=()=>{db.close();rej(tx.error||new Error('IDB clear'))}})}
+function blobToDataUrl(b){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=()=>rej(r.error);r.readAsDataURL(b)})}
+function dataUrlToBlob(u){const i=u.indexOf(','),meta=u.slice(5,i),bin=atob(u.slice(i+1)),a=new Uint8Array(bin.length);for(let k=0;k<bin.length;k++)a[k]=bin.charCodeAt(k);return new Blob([a],{type:meta.split(';')[0]||'image/png'})}
+function loadImageFromBlob(b){return blobToDataUrl(b).then(u=>new Promise((res,rej)=>{const im=new Image();im.onload=()=>res(im);im.onerror=()=>rej(new Error('Obrázek'));im.src=u}))}
+
+function floorPack(f,i){const s=f.state;return {name:f.name,W:s.W,H:s.H,hasImg:!!s.img,thick:s.thick,dark:s.dark,doorWidth:s.doorWidth,length:s.length,unit:s.unit,
+ wallEdits:s.wallEdits||[],hidden:[...(s.hidden||[])],calibration:s.calibration,openings:s.openings,
+ rooms:(s.rooms?.length?s.rooms:s.previousLayout||[]).map(r=>({id:r.id,cx:r.cx,cy:r.cy,name:r.name,note:r.note||''})),roomsComputed:!!(s.rooms&&s.rooms.length&&s.roomValid),
+ mode:s.mode,views:floorViews[i]||null,
+ skirtingNotes:s.skirtingNotes,materialNotes:s.materialNotes,materialCoverage:s.materialCoverage,roomDisabled:s.roomDisabled,screedFactors:s.screedFactors,screedRoomFactors:s.screedRoomFactors,finalPrices:s.finalPrices,
+ workItems:s.workItems,nextWorkId:s.nextWorkId,workExcluded:s.workExcluded,workNotes:s.workNotes,workDone:s.workDone}}
+function buildPack(){return {v:1,activeFloor,activeView,enhance:$('enhance').checked,fillHatch:$('fillHatch').checked,mailTo:mailToValue,floors:floorProjects.map(floorPack)}}
+const blobCache=new Map();
+async function floorBlob(f){
+ const im=f.state.img;if(!im)return null;const id=imgId(im);
+ if(blobCache.has(id))return blobCache.get(id);
+ const c=document.createElement('canvas');c.width=f.state.W;c.height=f.state.H;c.getContext('2d').drawImage(im,0,0,f.state.W,f.state.H);
+ const b=await new Promise(r=>c.toBlob(r,'image/png'));
+ if(!b)throw new Error('toBlob');
+ blobCache.set(id,b);return b;
+}
+async function persistNow(force){
+ if(!persistReady||persistBlocked||persistSaving)return;
+ persistSaving=true;
+ try{
+  floorSave();
+  const packJson=JSON.stringify(buildPack());
+  const ids=floorProjects.map(f=>imgId(f.state.img));
+  const sig=packJson+'|'+ids.join(',');
+  if(!force&&sig===lastSig)return;
+  setSaveState('saving');
+  const puts=[['pack',packJson]],dels=[];
+  for(let i=0;i<floorProjects.length;i++){
+   if(ids[i]!==savedImgIds[i]){const b=await floorBlob(floorProjects[i]);if(b)puts.push(['img'+i,b]);else dels.push('img'+i)}
+  }
+  for(let j=floorProjects.length;j<savedCount;j++)dels.push('img'+j);
+  if(persistBlocked)return;
+  await idbWrite(puts,dels);
+  savedImgIds=ids;savedCount=floorProjects.length;lastSig=sig;setSaveState('saved');
+ }catch(e){console.error(e);setSaveState('error')}
+ finally{persistSaving=false}
+}
+setInterval(()=>persistNow(false),2500);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')persistNow(false)});
+addEventListener('pagehide',()=>persistNow(false));
+
+async function restoreFloorData(f,blob){
+ for(const [k,v] of [['thick',f.thick],['dark',f.dark],['doorWidth',f.doorWidth],['length',f.length],['unit',f.unit]])if(v!=null)$(k).value=v;
+ $('thickv').textContent=$('thick').value;$('darkv').textContent=$('dark').value;
+ if(blob){
+  const im=await loadImageFromBlob(blob);
+  wallEdits=f.wallEdits||[];img=im;W=f.W;H=f.H;canvas.width=W;canvas.height=H;analyze();
+  hidden=new Set(f.hidden||[]);calibration=f.calibration||null;openings=Array.isArray(f.openings)?f.openings:[];
+ }
+ skirtingNotes=f.skirtingNotes||{};materialNotes=f.materialNotes||{};materialCoverage=f.materialCoverage||{};roomDisabled=f.roomDisabled||{};
+ screedFactors=f.screedFactors||{materialMm:1,workPasses:1};screedRoomFactors=f.screedRoomFactors||{material:{},work:{}};finalPrices=f.finalPrices||{};
+ workItems=f.workItems||[];nextWorkId=f.nextWorkId||1;workExcluded=f.workExcluded||{};workNotes=f.workNotes||{};workDone=f.workDone||{};
+ previousLayout=f.rooms||[];if(blob&&f.roomsComputed&&calibration){rooms=(f.rooms||[]).map(r=>({...r}));try{calculateRooms()}catch(e){console.error(e)}}
+ mode=allTabs.includes(f.mode)?f.mode:'orig';
+ floorViews[activeFloor]=f.views||{material:'orig',work:'orig'};
+ updateMeasureButton();try{renderFinal()}catch(e){console.error(e)}
+}
+async function restoreProject(){
+ const all=await idbReadAll();
+ if(!all.pack)return false;
+ const pack=JSON.parse(all.pack);
+ if(!pack.floors||!pack.floors.length)return false;
+ $('enhance').checked=pack.enhance!==false;$('fillHatch').checked=pack.fillHatch!==false;mailToValue=pack.mailTo||'';
+ for(let i=0;i<pack.floors.length;i++){
+  const f=pack.floors[i];
+  if(i>0){floorSave();floorProjects.push({name:f.name,state:floorEmpty()});activeFloor=floorProjects.length-1;floorViews[activeFloor]={material:'orig',work:'orig'};floorApply(floorProjects[activeFloor].state)}
+  floorProjects[activeFloor].name=f.name||((i+1)+'. patro');
+  await restoreFloorData(f,all['img'+i]||null);
+  floorSave();
+ }
+ activeFloor=Math.max(0,Math.min(pack.activeFloor||0,floorProjects.length-1));
+ activeView=pack.activeView==='work'?'work':'material';
+ document.body.classList.toggle('work-view',activeView==='work');
+ summaryActive=false;document.body.classList.remove('final-mode');
+ floorApply(floorProjects[activeFloor].state);floorRenderTabs();
+ savedImgIds=floorProjects.map(f=>imgId(f.state.img));savedCount=floorProjects.length;
+ return floorProjects.some(f=>f.state.img);
+}
+(async()=>{
+ try{
+  if(!window.indexedDB)throw new Error('IndexedDB není k dispozici');
+  const had=await restoreProject();
+  if(had)$('status').textContent='Obnoveno uložené rozpracované měření ('+floorProjects.length+(floorProjects.length===1?' patro':floorProjects.length<5?' patra':' pater')+').';
+  persistReady=true;setSaveState('saved');
+ }catch(e){
+  console.error(e);
+  if(!window.indexedDB){setSaveState('unavailable')}
+  else{persistBlocked=true;setSaveState('paused');alert('Uložená data se nepodařilo obnovit, proto je ukládání pozastaveno a původní uložená data zůstala nedotčená. Můžeš zkusit „Načíst zálohu“, nebo uložená data odstranit tlačítkem „Smazat vše“.')}
+ }
+})();
+
+/* soubory ke stažení: capability downloads (publikovaná stránka), jinak běžný odkaz */
+try{if(window.claude&&claude.use)claude.use('downloads').then(n=>{dlNs=n}).catch(()=>{})}catch(e){}
+async function saveTextFile(name,text,mime){
+ if(dlNs){try{await dlNs.save({filename:name,data:text});return}catch(e){if(e&&(e.code==='declined'))return;console.error(e)}}
+ const blob=new Blob([text],{type:(mime||'application/octet-stream')+';charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+
+/* mazání */
+$('delFloor').onclick=async()=>{
+ const f=floorProjects[activeFloor];
+ if(!await uiConfirm('Smazat patro „'+f.name+'“ včetně půdorysu, měření a cen? Tuto akci nelze vrátit.','Smazat patro',true))return;
+ for(const id of ['roomDialog','skirtingDialog','workRoomDialog'])try{if($(id).open)$(id).close()}catch(e){}
+ summaryActive=false;document.body.classList.remove('final-mode');
+ if(floorProjects.length===1){floorProjects[0]={name:'1. patro',state:floorEmpty()};floorViews[0]={material:'orig',work:'orig'}}
+ else{floorProjects.splice(activeFloor,1);floorViews.splice(activeFloor,1);activeFloor=Math.min(activeFloor,floorProjects.length-1)}
+ floorApply(floorProjects[activeFloor].state);floorRenderTabs();
+ $('toolsPanel').open=true;
+ persistNow(true);
+};
+$('delAll').onclick=async()=>{
+ if(!await uiConfirm('Smazat všechna patra, půdorysy i uložená data v tomto zařízení? Tuto akci nelze vrátit.','Smazat vše',true))return;
+ persistBlocked=true;
+ try{await idbClear()}catch(e){console.error(e)}
+ location.reload();
+};
+
+/* záloha do souboru a načtení zálohy */
+$('bkExport').onclick=async()=>{
+ try{
+  floorSave();
+  const images=[];for(const f of floorProjects){const b=await floorBlob(f);images.push(b?await blobToDataUrl(b):null)}
+  const data=JSON.stringify({format:'vymery-podlah-zaloha',v:1,savedAt:new Date().toISOString(),pack:buildPack(),images});
+  await saveTextFile('vymery-podlah-zaloha-'+new Date().toISOString().slice(0,10)+'.json',data,'application/json');
+ }catch(e){console.error(e);alert('Zálohu se nepodařilo vytvořit.')}
+};
+$('bkImport').onclick=()=>$('bkFile').click();
+$('bkFile').onchange=async e=>{
+ const f=e.target.files[0];e.target.value='';if(!f)return;
+ try{
+  const d=JSON.parse(await f.text());
+  if(d.format!=='vymery-podlah-zaloha'||!d.pack||!Array.isArray(d.pack.floors))throw new Error('Neplatný formát');
+  if(!await uiConfirm('Načtením zálohy se nahradí všechna aktuální data v aplikaci. Pokračovat?','Načíst zálohu',true))return;
+  persistBlocked=true;
+  const puts=[['pack',JSON.stringify(d.pack)]];(d.images||[]).forEach((u,i)=>{if(u)puts.push(['img'+i,dataUrlToBlob(u)])});
+  await idbClear();await idbWrite(puts,[]);location.reload();
+ }catch(err){console.error(err);alert('Soubor se zálohou se nepodařilo načíst.')}
+};
+</script></html>
